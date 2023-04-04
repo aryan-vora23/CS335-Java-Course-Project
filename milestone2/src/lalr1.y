@@ -1803,6 +1803,7 @@ FormalParameterLists:
             tac="pop "+token[i];
             tac=to_string(line++)+" "+tac; prog.push_back(tac);
         }
+        
     }
 ;
 FormalParameterList:
@@ -3956,7 +3957,7 @@ MethodInvocation:
                 }
             // }
         }
-        $$->tac_val=$$->tac_val+"\n"+"deallocate 0";
+        $$->tac_val=$$->tac_val+"\n"+"deallocate 0"+"\n"+"pop BP_old"+"\n"+"BP=BP_old"+"\n"+"return";
         $$->flag=2;                
     }
     | Name OPEN_BR ArgumentList CLOSE_BR{
@@ -3996,7 +3997,7 @@ MethodInvocation:
                 if(args[i]!=args1[i]) cout<<"Argument mismatch2";
             }
             int si=getsize(args1);
-            $$->tac_val=$$->tac_val+"\n"+"deallocate "+to_string(si);
+            $$->tac_val=$$->tac_val+"\n"+"deallocate "+to_string(si)+"\n"+"pop BP_old"+"\n"+"BP=BP_old"+"\n"+"return";
         }
         else{
             string s=$1->tac_val;
@@ -4043,7 +4044,7 @@ MethodInvocation:
                     if(args[i]!=args1[i]) cout<<"Argument mismatch2";
                 }
                 int si=getsize(args1);
-                $$->tac_val=$$->tac_val+"\n"+"deallocate "+to_string(si);
+                $$->tac_val=$$->tac_val+"\n"+"deallocate "+to_string(si)+"\n"+"pop BP_old"+"\n"+"BP=BP_old"+"\n"+"return";
             // }
             
         }
