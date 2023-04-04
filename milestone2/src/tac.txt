@@ -7,19 +7,22 @@
 6 pop a
 7 t1 = a + b
 8 c = t1
-9 define LargestInArrayExample.main:
-10 return_addr = PC+1
-11 push BP
-12 BP = SP
-13 args_num 1
-14 pop args[]
-15 a = 1
+9 pop BP_old
+10 BP=BP_old
+11 return
+12 define LargestInArrayExample.main:
+13 return_addr = PC+1
+14 push BP
+15 BP = SP
+16 args_num 1
+17 pop args[]
+18 a = 1
 t2 = cast_to_double 1.2
-16 b = 1.2
-17 push a
-18 push b
+19 b = 1.2
+20 push a
+21 push b
 call f 2
 deallocate 12
-pop BP_old
-BP=BP_old
-return
+22 pop BP_old
+23 BP=BP_old
+24 return
