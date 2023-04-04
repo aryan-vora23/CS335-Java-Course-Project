@@ -875,33 +875,33 @@ static const yytype_int16 yyrline[] =
     1103,  1114,  1128,  1143,  1157,  1171,  1184,  1198,  1211,  1224,
     1238,  1250,  1262,  1271,  1284,  1292,  1303,  1314,  1322,  1333,
     1342,  1351,  1362,  1371,  1383,  1400,  1418,  1434,  1453,  1466,
-    1526,  1546,  1577,  1591,  1610,  1623,  1636,  1648,  1660,  1671,
-    1684,  1696,  1708,  1721,  1734,  1745,  1759,  1775,  1795,  1806,
-    1821,  1837,  1848,  1856,  1868,  1876,  1887,  1899,  1910,  1920,
-    1930,  1942,  1954,  1967,  1983,  1994,  2004,  2014,  2025,  2037,
-    2048,  2060,  2074,  2086,  2097,  2108,  2120,  2129,  2141,  2151,
-    2162,  2170,  2181,  2189,  2199,  2209,  2221,  2248,  2273,  2293,
-    2314,  2331,  2363,  2372,  2384,  2392,  2403,  2419,  2430,  2445,
-    2463,  2472,  2480,  2488,  2496,  2504,  2514,  2522,  2530,  2538,
-    2546,  2556,  2564,  2572,  2581,  2589,  2597,  2605,  2613,  2621,
-    2629,  2637,  2647,  2657,  2673,  2689,  2702,  2712,  2722,  2732,
-    2742,  2752,  2763,  2773,  2786,  2800,  2816,  2832,  2846,  2855,
-    2865,  2875,  2888,  2896,  2907,  2918,  2926,  2937,  2947,  2958,
-    2972,  2986,  3002,  3015,  3029,  3043,  3058,  3072,  3087,  3102,
-    3120,  3133,  3147,  3161,  3176,  3190,  3205,  3220,  3238,  3247,
-    3263,  3274,  3283,  3296,  3309,  3321,  3334,  3350,  3362,  3381,
-    3393,  3407,  3417,  3427,  3440,  3448,  3459,  3473,  3487,  3507,
-    3521,  3533,  3543,  3560,  3571,  3582,  3595,  3611,  3642,  3682,
-    3692,  3706,  3723,  3740,  3757,  3777,  3788,  3802,  3820,  3830,
-    3843,  3864,  3878,  3948,  4038,  4066,  4098,  4118,  4151,  4183,
-    4214,  4227,  4239,  4250,  4263,  4284,  4305,  4317,  4328,  4345,
-    4362,  4377,  4398,  4419,  4432,  4449,  4466,  4478,  4494,  4511,
-    4523,  4541,  4554,  4590,  4626,  4664,  4677,  4714,  4752,  4765,
-    4801,  4837,  4875,  4888,  4924,  4960,  4996,  5032,  5054,  5067,
-    5103,  5141,  5154,  5192,  5205,  5243,  5256,  5294,  5307,  5345,
-    5358,  5396,  5409,  5434,  5447,  5460,  5512,  5523,  5533,  5549,
-    5558,  5567,  5576,  5585,  5594,  5603,  5612,  5621,  5630,  5639,
-    5648,  5659,  5674
+    1526,  1546,  1577,  1591,  1610,  1625,  1639,  1651,  1663,  1674,
+    1687,  1699,  1711,  1724,  1737,  1748,  1762,  1786,  1806,  1817,
+    1832,  1848,  1859,  1867,  1879,  1887,  1898,  1910,  1921,  1931,
+    1941,  1953,  1965,  1978,  1994,  2005,  2015,  2025,  2036,  2048,
+    2059,  2071,  2085,  2097,  2108,  2119,  2131,  2140,  2152,  2162,
+    2173,  2181,  2192,  2200,  2210,  2220,  2232,  2259,  2284,  2304,
+    2325,  2342,  2374,  2383,  2395,  2403,  2414,  2430,  2441,  2456,
+    2474,  2483,  2491,  2499,  2507,  2515,  2525,  2533,  2541,  2549,
+    2557,  2567,  2575,  2583,  2592,  2600,  2608,  2616,  2624,  2632,
+    2640,  2648,  2658,  2668,  2684,  2700,  2713,  2723,  2733,  2743,
+    2753,  2763,  2774,  2784,  2797,  2811,  2827,  2843,  2857,  2866,
+    2876,  2886,  2899,  2907,  2918,  2929,  2937,  2948,  2958,  2969,
+    2983,  2997,  3013,  3026,  3040,  3054,  3069,  3083,  3098,  3113,
+    3131,  3144,  3158,  3172,  3187,  3201,  3216,  3231,  3249,  3258,
+    3274,  3285,  3294,  3307,  3320,  3332,  3345,  3361,  3373,  3392,
+    3404,  3418,  3428,  3438,  3451,  3459,  3470,  3484,  3498,  3518,
+    3532,  3544,  3554,  3571,  3582,  3593,  3606,  3622,  3653,  3693,
+    3703,  3717,  3734,  3751,  3768,  3788,  3799,  3813,  3831,  3841,
+    3854,  3875,  3889,  3959,  4049,  4077,  4109,  4129,  4162,  4194,
+    4225,  4238,  4250,  4261,  4274,  4295,  4316,  4328,  4339,  4356,
+    4373,  4388,  4409,  4430,  4443,  4460,  4477,  4489,  4505,  4522,
+    4534,  4552,  4565,  4601,  4637,  4675,  4688,  4725,  4763,  4776,
+    4812,  4848,  4886,  4899,  4935,  4971,  5007,  5043,  5065,  5078,
+    5114,  5152,  5165,  5203,  5216,  5254,  5267,  5305,  5318,  5356,
+    5369,  5407,  5420,  5445,  5458,  5471,  5523,  5534,  5544,  5560,
+    5569,  5578,  5587,  5596,  5605,  5614,  5623,  5632,  5641,  5650,
+    5659,  5670,  5685
 };
 #endif
 
@@ -4809,12 +4809,14 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-1].node)->type;
         fname=cname;
+        
+        
     }
-#line 4814 "lalr1.tab.c"
+#line 4816 "lalr1.tab.c"
     break;
 
   case 125: /* MethodHeader: Modifiers Type MethodDeclarator Throws  */
-#line 1623 "lalr1.y"
+#line 1625 "lalr1.y"
                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4827,12 +4829,13 @@ yyreduce:
         symadd((yyvsp[-1].node)->name,(yyvsp[-2].node)->type,(yyvsp[-1].node)->value,(yyvsp[-3].node)->access_specifier);
         (yyval.node)->type=(yyvsp[-2].node)->type;
         // cout<<"in"<<$$->token;
+
     }
-#line 4832 "lalr1.tab.c"
+#line 4835 "lalr1.tab.c"
     break;
 
   case 126: /* MethodHeader: Modifiers Type MethodDeclarator  */
-#line 1636 "lalr1.y"
+#line 1639 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4845,11 +4848,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-1].node)->type;
         // cout<<"in"<<$$->token;
     }
-#line 4849 "lalr1.tab.c"
+#line 4852 "lalr1.tab.c"
     break;
 
   case 127: /* MethodHeader: Type MethodDeclarator Throws  */
-#line 1648 "lalr1.y"
+#line 1651 "lalr1.y"
                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4862,11 +4865,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-2].node)->type;
         // cout<<"in"<<$$->token;
     }
-#line 4866 "lalr1.tab.c"
+#line 4869 "lalr1.tab.c"
     break;
 
   case 128: /* MethodHeader: Type MethodDeclarator  */
-#line 1660 "lalr1.y"
+#line 1663 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4878,11 +4881,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-1].node)->type;
         // cout<<"in"<<$$->token;
     }
-#line 4882 "lalr1.tab.c"
+#line 4885 "lalr1.tab.c"
     break;
 
   case 129: /* MethodHeader: Modifiers VOID MethodDeclarator Throws  */
-#line 1671 "lalr1.y"
+#line 1674 "lalr1.y"
                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4896,11 +4899,11 @@ yyreduce:
         (yyval.node)->type="void";
         // cout<<"in"<<$$->token;
     }
-#line 4900 "lalr1.tab.c"
+#line 4903 "lalr1.tab.c"
     break;
 
   case 130: /* MethodHeader: Modifiers VOID MethodDeclarator  */
-#line 1684 "lalr1.y"
+#line 1687 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4913,11 +4916,11 @@ yyreduce:
         (yyval.node)->type="void";
         // cout<<"in"<<$$->token;
     }
-#line 4917 "lalr1.tab.c"
+#line 4920 "lalr1.tab.c"
     break;
 
   case 131: /* MethodHeader: VOID MethodDeclarator Throws  */
-#line 1696 "lalr1.y"
+#line 1699 "lalr1.y"
                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4930,11 +4933,11 @@ yyreduce:
         (yyval.node)->type="void";
         // cout<<"in"<<$$->token;
     }
-#line 4934 "lalr1.tab.c"
+#line 4937 "lalr1.tab.c"
     break;
 
   case 132: /* MethodHeader: VOID MethodDeclarator  */
-#line 1708 "lalr1.y"
+#line 1711 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodHeader";
@@ -4946,11 +4949,11 @@ yyreduce:
         (yyval.node)->type="void";
         // cout<<"in"<<$$->token;
     }
-#line 4950 "lalr1.tab.c"
+#line 4953 "lalr1.tab.c"
     break;
 
   case 133: /* MethodDeclarator: FunctionName OPEN_BR FormalParameterLists CLOSE_BR  */
-#line 1721 "lalr1.y"
+#line 1724 "lalr1.y"
                                                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodDeclarator";
@@ -4964,11 +4967,11 @@ yyreduce:
         (yyval.node)->value=(yyvsp[-1].node)->type;
         // cout<<"in"<<$$->token;
     }
-#line 4968 "lalr1.tab.c"
+#line 4971 "lalr1.tab.c"
     break;
 
   case 134: /* MethodDeclarator: FunctionName OPEN_BR CLOSE_BR  */
-#line 1734 "lalr1.y"
+#line 1737 "lalr1.y"
                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodDeclarator";
@@ -4980,11 +4983,11 @@ yyreduce:
         (yyval.node)->name=(yyvsp[-2].node)->name;
         // cout<<"in"<<$$->token;
     }
-#line 4984 "lalr1.tab.c"
+#line 4987 "lalr1.tab.c"
     break;
 
   case 135: /* MethodDeclarator: MethodDeclarator OPEN_SQ CLOSE_SQ  */
-#line 1745 "lalr1.y"
+#line 1748 "lalr1.y"
                                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodDeclarator";
@@ -4997,11 +5000,11 @@ yyreduce:
         (yyval.node)->value=(yyvsp[-2].node)->type;
         // cout<<"in"<<$$->token;
     }
-#line 5001 "lalr1.tab.c"
+#line 5004 "lalr1.tab.c"
     break;
 
   case 136: /* FunctionName: IDENTIFIER  */
-#line 1759 "lalr1.y"
+#line 1762 "lalr1.y"
               {
         (yyval.node)=new astnode;
         (yyval.node)->token="FunctionName";
@@ -5015,12 +5018,20 @@ yyreduce:
         tac="define "+cname+"."+(yyvsp[0].node)->lexeme+":";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         fname="fname";
+        // string tac;
+        tac="push PC+1";
+        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
+        tac="push BP";
+        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
+        tac="BP = SP";
     }
-#line 5020 "lalr1.tab.c"
+#line 5031 "lalr1.tab.c"
     break;
 
   case 137: /* FormalParameterLists: FormalParameterList  */
-#line 1775 "lalr1.y"
+#line 1786 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="FormalParameterLists";
@@ -5039,11 +5050,11 @@ yyreduce:
             tac=to_string(line++)+" "+tac; prog.push_back(tac);
         }
     }
-#line 5043 "lalr1.tab.c"
+#line 5054 "lalr1.tab.c"
     break;
 
   case 138: /* FormalParameterList: FormalParameter  */
-#line 1795 "lalr1.y"
+#line 1806 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="FormalParameterList";
@@ -5055,11 +5066,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
     }
-#line 5059 "lalr1.tab.c"
+#line 5070 "lalr1.tab.c"
     break;
 
   case 139: /* FormalParameterList: FormalParameterList COMMA FormalParameter  */
-#line 1806 "lalr1.y"
+#line 1817 "lalr1.y"
                                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="FormalParameterList";
@@ -5073,11 +5084,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[-2].node)->tac_val+","+(yyvsp[0].node)->tac_val;
     }
-#line 5077 "lalr1.tab.c"
+#line 5088 "lalr1.tab.c"
     break;
 
   case 140: /* FormalParameter: Type VariableDeclaratorId  */
-#line 1821 "lalr1.y"
+#line 1832 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="FormalParameter";
@@ -5092,11 +5103,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyvsp[0].node)->type=(yyvsp[-1].node)->type;
     }
-#line 5096 "lalr1.tab.c"
+#line 5107 "lalr1.tab.c"
     break;
 
   case 141: /* Throws: THROWS ClassTypeList  */
-#line 1837 "lalr1.y"
+#line 1848 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="Throws";
@@ -5106,11 +5117,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5110 "lalr1.tab.c"
+#line 5121 "lalr1.tab.c"
     break;
 
   case 142: /* ClassTypeList: ClassType  */
-#line 1848 "lalr1.y"
+#line 1859 "lalr1.y"
                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="ClassTypeList";
@@ -5119,11 +5130,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5123 "lalr1.tab.c"
+#line 5134 "lalr1.tab.c"
     break;
 
   case 143: /* ClassTypeList: ClassTypeList COMMA ClassType  */
-#line 1856 "lalr1.y"
+#line 1867 "lalr1.y"
                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ClassTypeList";
@@ -5134,11 +5145,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5138 "lalr1.tab.c"
+#line 5149 "lalr1.tab.c"
     break;
 
   case 144: /* MethodBody: Block  */
-#line 1868 "lalr1.y"
+#line 1879 "lalr1.y"
               {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodBody";
@@ -5147,11 +5158,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5151 "lalr1.tab.c"
+#line 5162 "lalr1.tab.c"
     break;
 
   case 145: /* MethodBody: SEMICOLON  */
-#line 1876 "lalr1.y"
+#line 1887 "lalr1.y"
                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodBody";
@@ -5160,11 +5171,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5164 "lalr1.tab.c"
+#line 5175 "lalr1.tab.c"
     break;
 
   case 146: /* StaticInitializer: STATIC Block  */
-#line 1887 "lalr1.y"
+#line 1898 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="StaticInitializer";
@@ -5174,11 +5185,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5178 "lalr1.tab.c"
+#line 5189 "lalr1.tab.c"
     break;
 
   case 147: /* ConstructorDeclaration: Modifiers ConstructorDeclarator Throws ConstructorBody  */
-#line 1899 "lalr1.y"
+#line 1910 "lalr1.y"
                                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclaration";
@@ -5190,11 +5201,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5194 "lalr1.tab.c"
+#line 5205 "lalr1.tab.c"
     break;
 
   case 148: /* ConstructorDeclaration: Modifiers ConstructorDeclarator ConstructorBody  */
-#line 1910 "lalr1.y"
+#line 1921 "lalr1.y"
                                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclaration";
@@ -5205,11 +5216,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5209 "lalr1.tab.c"
+#line 5220 "lalr1.tab.c"
     break;
 
   case 149: /* ConstructorDeclaration: ConstructorDeclarator Throws ConstructorBody  */
-#line 1920 "lalr1.y"
+#line 1931 "lalr1.y"
                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclaration";
@@ -5220,11 +5231,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5224 "lalr1.tab.c"
+#line 5235 "lalr1.tab.c"
     break;
 
   case 150: /* ConstructorDeclaration: ConstructorDeclarator ConstructorBody  */
-#line 1930 "lalr1.y"
+#line 1941 "lalr1.y"
                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclaration";
@@ -5234,11 +5245,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5238 "lalr1.tab.c"
+#line 5249 "lalr1.tab.c"
     break;
 
   case 151: /* ConstructorDeclarator: ConstructorName OPEN_BR FormalParameterLists CLOSE_BR  */
-#line 1942 "lalr1.y"
+#line 1953 "lalr1.y"
                                                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclarator";
@@ -5251,11 +5262,11 @@ yyreduce:
         symadd((yyvsp[-3].node)->name,"constructor",(yyvsp[-1].node)->type);
         // cout<<"in"<<$$->token;
     }
-#line 5255 "lalr1.tab.c"
+#line 5266 "lalr1.tab.c"
     break;
 
   case 152: /* ConstructorDeclarator: ConstructorName OPEN_BR CLOSE_BR  */
-#line 1954 "lalr1.y"
+#line 1965 "lalr1.y"
                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorDeclarator";
@@ -5267,11 +5278,11 @@ yyreduce:
         symadd((yyvsp[-2].node)->name,"constructor");
         // cout<<"in"<<$$->token;
     }
-#line 5271 "lalr1.tab.c"
+#line 5282 "lalr1.tab.c"
     break;
 
   case 153: /* ConstructorName: SingularName  */
-#line 1967 "lalr1.y"
+#line 1978 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorName";
@@ -5286,11 +5297,11 @@ yyreduce:
         tac="define "+cname+"."+"ctor"+":";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
     }
-#line 5290 "lalr1.tab.c"
+#line 5301 "lalr1.tab.c"
     break;
 
   case 154: /* ConstructorBody: OPEN_CR SYMTABS ExplicitConstructorInvocation BlockStatements CLOSE_CR SYMTABE  */
-#line 1983 "lalr1.y"
+#line 1994 "lalr1.y"
                                                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorBody";
@@ -5302,11 +5313,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5306 "lalr1.tab.c"
+#line 5317 "lalr1.tab.c"
     break;
 
   case 155: /* ConstructorBody: OPEN_CR SYMTABS ExplicitConstructorInvocation CLOSE_CR SYMTABE  */
-#line 1994 "lalr1.y"
+#line 2005 "lalr1.y"
                                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorBody";
@@ -5317,11 +5328,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5321 "lalr1.tab.c"
+#line 5332 "lalr1.tab.c"
     break;
 
   case 156: /* ConstructorBody: OPEN_CR SYMTABS BlockStatements CLOSE_CR SYMTABE  */
-#line 2004 "lalr1.y"
+#line 2015 "lalr1.y"
                                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorBody";
@@ -5332,11 +5343,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5336 "lalr1.tab.c"
+#line 5347 "lalr1.tab.c"
     break;
 
   case 157: /* ConstructorBody: OPEN_CR CLOSE_CR  */
-#line 2014 "lalr1.y"
+#line 2025 "lalr1.y"
                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstructorBody";
@@ -5346,11 +5357,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5350 "lalr1.tab.c"
+#line 5361 "lalr1.tab.c"
     break;
 
   case 158: /* ExplicitConstructorInvocation: THIS OPEN_BR ArgumentList CLOSE_BR SEMICOLON  */
-#line 2025 "lalr1.y"
+#line 2036 "lalr1.y"
                                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExplicitConstructorInvocation";
@@ -5363,11 +5374,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5367 "lalr1.tab.c"
+#line 5378 "lalr1.tab.c"
     break;
 
   case 159: /* ExplicitConstructorInvocation: THIS OPEN_BR CLOSE_BR SEMICOLON  */
-#line 2037 "lalr1.y"
+#line 2048 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExplicitConstructorInvocation";
@@ -5379,11 +5390,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5383 "lalr1.tab.c"
+#line 5394 "lalr1.tab.c"
     break;
 
   case 160: /* ExplicitConstructorInvocation: SUPER OPEN_BR ArgumentList CLOSE_BR SEMICOLON  */
-#line 2048 "lalr1.y"
+#line 2059 "lalr1.y"
                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExplicitConstructorInvocation";
@@ -5396,11 +5407,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5400 "lalr1.tab.c"
+#line 5411 "lalr1.tab.c"
     break;
 
   case 161: /* ExplicitConstructorInvocation: SUPER OPEN_BR CLOSE_BR SEMICOLON  */
-#line 2060 "lalr1.y"
+#line 2071 "lalr1.y"
                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExplicitConstructorInvocation";
@@ -5412,11 +5423,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5416 "lalr1.tab.c"
+#line 5427 "lalr1.tab.c"
     break;
 
   case 162: /* InterfaceDeclaration: Modifiers INTERFACE IDENTIFIER ExtendsInterfaces InterfaceBody  */
-#line 2074 "lalr1.y"
+#line 2085 "lalr1.y"
                                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceDeclaration";
@@ -5429,11 +5440,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5433 "lalr1.tab.c"
+#line 5444 "lalr1.tab.c"
     break;
 
   case 163: /* InterfaceDeclaration: Modifiers INTERFACE IDENTIFIER InterfaceBody  */
-#line 2086 "lalr1.y"
+#line 2097 "lalr1.y"
                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceDeclaration";
@@ -5445,11 +5456,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5449 "lalr1.tab.c"
+#line 5460 "lalr1.tab.c"
     break;
 
   case 164: /* InterfaceDeclaration: INTERFACE IDENTIFIER ExtendsInterfaces InterfaceBody  */
-#line 2097 "lalr1.y"
+#line 2108 "lalr1.y"
                                                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceDeclaration";
@@ -5461,11 +5472,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5465 "lalr1.tab.c"
+#line 5476 "lalr1.tab.c"
     break;
 
   case 165: /* InterfaceDeclaration: INTERFACE IDENTIFIER InterfaceBody  */
-#line 2108 "lalr1.y"
+#line 2119 "lalr1.y"
                                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceDeclaration";
@@ -5476,11 +5487,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5480 "lalr1.tab.c"
+#line 5491 "lalr1.tab.c"
     break;
 
   case 166: /* ExtendsInterfaces: EXTENDS InterfaceType  */
-#line 2120 "lalr1.y"
+#line 2131 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExtendsInterfaces";
@@ -5490,11 +5501,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5494 "lalr1.tab.c"
+#line 5505 "lalr1.tab.c"
     break;
 
   case 167: /* ExtendsInterfaces: ExtendsInterfaces COMMA InterfaceType  */
-#line 2129 "lalr1.y"
+#line 2140 "lalr1.y"
                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExtendsInterfaces";
@@ -5505,11 +5516,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5509 "lalr1.tab.c"
+#line 5520 "lalr1.tab.c"
     break;
 
   case 168: /* InterfaceBody: OPEN_CR SYMTABS InterfaceMemberDeclarations CLOSE_CR SYMTABE  */
-#line 2141 "lalr1.y"
+#line 2152 "lalr1.y"
                                                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceBody";
@@ -5520,11 +5531,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5524 "lalr1.tab.c"
+#line 5535 "lalr1.tab.c"
     break;
 
   case 169: /* InterfaceBody: OPEN_CR CLOSE_CR  */
-#line 2151 "lalr1.y"
+#line 2162 "lalr1.y"
                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceBody";
@@ -5534,11 +5545,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5538 "lalr1.tab.c"
+#line 5549 "lalr1.tab.c"
     break;
 
   case 170: /* InterfaceMemberDeclarations: InterfaceMemberDeclaration  */
-#line 2162 "lalr1.y"
+#line 2173 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceMemberDeclarations";
@@ -5547,11 +5558,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5551 "lalr1.tab.c"
+#line 5562 "lalr1.tab.c"
     break;
 
   case 171: /* InterfaceMemberDeclarations: InterfaceMemberDeclarations InterfaceMemberDeclaration  */
-#line 2170 "lalr1.y"
+#line 2181 "lalr1.y"
                                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceMemberDeclarations";
@@ -5561,11 +5572,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5565 "lalr1.tab.c"
+#line 5576 "lalr1.tab.c"
     break;
 
   case 172: /* InterfaceMemberDeclaration: ConstantDeclaration  */
-#line 2181 "lalr1.y"
+#line 2192 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceMemberDeclaration";
@@ -5574,11 +5585,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5578 "lalr1.tab.c"
+#line 5589 "lalr1.tab.c"
     break;
 
   case 173: /* InterfaceMemberDeclaration: AbstractMethodDeclaration  */
-#line 2189 "lalr1.y"
+#line 2200 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="InterfaceMemberDeclaration";
@@ -5587,11 +5598,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5591 "lalr1.tab.c"
+#line 5602 "lalr1.tab.c"
     break;
 
   case 174: /* ConstantDeclaration: FieldDeclaration  */
-#line 2199 "lalr1.y"
+#line 2210 "lalr1.y"
                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstantDeclaration";
@@ -5600,11 +5611,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5604 "lalr1.tab.c"
+#line 5615 "lalr1.tab.c"
     break;
 
   case 175: /* AbstractMethodDeclaration: MethodHeader SEMICOLON  */
-#line 2209 "lalr1.y"
+#line 2220 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="AbstractMethodDeclaration";
@@ -5614,11 +5625,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5618 "lalr1.tab.c"
+#line 5629 "lalr1.tab.c"
     break;
 
   case 176: /* ArrayInitializer: OPEN_CR SYMTABS VariableInitializers COMMA CLOSE_CR SYMTABE  */
-#line 2221 "lalr1.y"
+#line 2232 "lalr1.y"
                                                                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayInitializer";
@@ -5646,11 +5657,11 @@ yyreduce:
         // cout<<"Dims: "<<$$->dims;
 // Type check kardo idhar
     }
-#line 5650 "lalr1.tab.c"
+#line 5661 "lalr1.tab.c"
     break;
 
   case 177: /* ArrayInitializer: OPEN_CR SYMTABS VariableInitializers CLOSE_CR SYMTABE  */
-#line 2248 "lalr1.y"
+#line 2259 "lalr1.y"
                                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayInitializer";
@@ -5676,11 +5687,11 @@ yyreduce:
         (yyval.node)->space=(yyvsp[-2].node)->space;
         // cout<<"Dims: "<<$$->dims;
     }
-#line 5680 "lalr1.tab.c"
+#line 5691 "lalr1.tab.c"
     break;
 
   case 178: /* ArrayInitializer: OPEN_CR COMMA CLOSE_CR  */
-#line 2273 "lalr1.y"
+#line 2284 "lalr1.y"
                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayInitializer";
@@ -5701,11 +5712,11 @@ yyreduce:
         (yyval.node)->value=",";
         // $$->tuples=NULL;
     }
-#line 5705 "lalr1.tab.c"
+#line 5716 "lalr1.tab.c"
     break;
 
   case 179: /* ArrayInitializer: OPEN_CR CLOSE_CR  */
-#line 2293 "lalr1.y"
+#line 2304 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayInitializer";
@@ -5725,11 +5736,11 @@ yyreduce:
         (yyval.node)->value="";
         // $$->tuples=NULL;
     }
-#line 5729 "lalr1.tab.c"
+#line 5740 "lalr1.tab.c"
     break;
 
   case 180: /* VariableInitializers: VariableInitializer  */
-#line 2314 "lalr1.y"
+#line 2325 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="VariableInitializers";
@@ -5747,11 +5758,11 @@ yyreduce:
         // $$->tuples=$1->tuples;
         // cout<<"in VariableInitializer Length: "<<$$->length<<" Space:"<<$$->space;
     }
-#line 5751 "lalr1.tab.c"
+#line 5762 "lalr1.tab.c"
     break;
 
   case 181: /* VariableInitializers: VariableInitializers COMMA VariableInitializer  */
-#line 2331 "lalr1.y"
+#line 2342 "lalr1.y"
                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="VariableInitializers";
@@ -5779,11 +5790,11 @@ yyreduce:
         (yyval.node)->value=(yyval.node)->tac_val;
         // cout<<"in VariableInitializers Length: "<<$$->length<<" Space:"<<$$->space;
     }
-#line 5783 "lalr1.tab.c"
+#line 5794 "lalr1.tab.c"
     break;
 
   case 182: /* Block: OPEN_CR CLOSE_CR  */
-#line 2363 "lalr1.y"
+#line 2374 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="Block";
@@ -5793,11 +5804,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5797 "lalr1.tab.c"
+#line 5808 "lalr1.tab.c"
     break;
 
   case 183: /* Block: OPEN_CR SYMTABS BlockStatements CLOSE_CR SYMTABE  */
-#line 2372 "lalr1.y"
+#line 2383 "lalr1.y"
                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="Block";
@@ -5808,11 +5819,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5812 "lalr1.tab.c"
+#line 5823 "lalr1.tab.c"
     break;
 
   case 184: /* BlockStatements: BlockStatement  */
-#line 2384 "lalr1.y"
+#line 2395 "lalr1.y"
                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="BlockStatements";
@@ -5821,11 +5832,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5825 "lalr1.tab.c"
+#line 5836 "lalr1.tab.c"
     break;
 
   case 185: /* BlockStatements: BlockStatements BlockStatement  */
-#line 2392 "lalr1.y"
+#line 2403 "lalr1.y"
                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="BlockStatements";
@@ -5835,11 +5846,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5839 "lalr1.tab.c"
+#line 5850 "lalr1.tab.c"
     break;
 
   case 186: /* BlockStatement: LocalVariableDeclarationStatement  */
-#line 2403 "lalr1.y"
+#line 2414 "lalr1.y"
                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="BlockStatement";
@@ -5856,11 +5867,11 @@ yyreduce:
         }
         }
     }
-#line 5860 "lalr1.tab.c"
+#line 5871 "lalr1.tab.c"
     break;
 
   case 187: /* BlockStatement: Statement  */
-#line 2419 "lalr1.y"
+#line 2430 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="BlockStatement";
@@ -5870,11 +5881,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         // cout<<"in"<<$$->token;
     }
-#line 5874 "lalr1.tab.c"
+#line 5885 "lalr1.tab.c"
     break;
 
   case 188: /* LocalVariableDeclarationStatement: LocalVariableDeclaration SEMICOLON  */
-#line 2430 "lalr1.y"
+#line 2441 "lalr1.y"
                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="LocalVariableDeclarationStatement";
@@ -5888,11 +5899,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[-1].node)->flag;
         (yyval.node)->dims=(yyvsp[-1].node)->dims;
     }
-#line 5892 "lalr1.tab.c"
+#line 5903 "lalr1.tab.c"
     break;
 
   case 189: /* LocalVariableDeclaration: Type VariableDeclarators  */
-#line 2445 "lalr1.y"
+#line 2456 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="LocalVariableDeclaration";
@@ -5909,11 +5920,11 @@ yyreduce:
         // vector<string>tokens=split(s,',');
         // symadd_list(tokens,$1->type);
     }
-#line 5913 "lalr1.tab.c"
+#line 5924 "lalr1.tab.c"
     break;
 
   case 190: /* Statement: StatementWithoutTrailingSubstatement  */
-#line 2463 "lalr1.y"
+#line 2474 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5923,11 +5934,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         // cout<<"in"<<$$->token;
     }
-#line 5927 "lalr1.tab.c"
+#line 5938 "lalr1.tab.c"
     break;
 
   case 191: /* Statement: LabeledStatement  */
-#line 2472 "lalr1.y"
+#line 2483 "lalr1.y"
                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5936,11 +5947,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5940 "lalr1.tab.c"
+#line 5951 "lalr1.tab.c"
     break;
 
   case 192: /* Statement: IfThenStatement  */
-#line 2480 "lalr1.y"
+#line 2491 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5949,11 +5960,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5953 "lalr1.tab.c"
+#line 5964 "lalr1.tab.c"
     break;
 
   case 193: /* Statement: IfThenElseStatement  */
-#line 2488 "lalr1.y"
+#line 2499 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5962,11 +5973,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5966 "lalr1.tab.c"
+#line 5977 "lalr1.tab.c"
     break;
 
   case 194: /* Statement: WhileStatement  */
-#line 2496 "lalr1.y"
+#line 2507 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5975,11 +5986,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5979 "lalr1.tab.c"
+#line 5990 "lalr1.tab.c"
     break;
 
   case 195: /* Statement: ForStatement  */
-#line 2504 "lalr1.y"
+#line 2515 "lalr1.y"
                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="Statement";
@@ -5988,11 +5999,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 5992 "lalr1.tab.c"
+#line 6003 "lalr1.tab.c"
     break;
 
   case 196: /* StatementNoShortIf: StatementWithoutTrailingSubstatement  */
-#line 2514 "lalr1.y"
+#line 2525 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementNoShortIf";
@@ -6001,11 +6012,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6005 "lalr1.tab.c"
+#line 6016 "lalr1.tab.c"
     break;
 
   case 197: /* StatementNoShortIf: LabeledStatementNoShortIf  */
-#line 2522 "lalr1.y"
+#line 2533 "lalr1.y"
                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementNoShortIf";
@@ -6014,11 +6025,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6018 "lalr1.tab.c"
+#line 6029 "lalr1.tab.c"
     break;
 
   case 198: /* StatementNoShortIf: IfThenElseStatementNoShortIf  */
-#line 2530 "lalr1.y"
+#line 2541 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementNoShortIf";
@@ -6027,11 +6038,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6031 "lalr1.tab.c"
+#line 6042 "lalr1.tab.c"
     break;
 
   case 199: /* StatementNoShortIf: WhileStatementNoShortIf  */
-#line 2538 "lalr1.y"
+#line 2549 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementNoShortIf";
@@ -6040,11 +6051,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6044 "lalr1.tab.c"
+#line 6055 "lalr1.tab.c"
     break;
 
   case 200: /* StatementNoShortIf: ForStatementNoShortIf  */
-#line 2546 "lalr1.y"
+#line 2557 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementNoShortIf";
@@ -6053,11 +6064,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6057 "lalr1.tab.c"
+#line 6068 "lalr1.tab.c"
     break;
 
   case 201: /* StatementWithoutTrailingSubstatement: Block  */
-#line 2556 "lalr1.y"
+#line 2567 "lalr1.y"
          {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6066,11 +6077,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6070 "lalr1.tab.c"
+#line 6081 "lalr1.tab.c"
     break;
 
   case 202: /* StatementWithoutTrailingSubstatement: EmptyStatement  */
-#line 2564 "lalr1.y"
+#line 2575 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6079,11 +6090,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6083 "lalr1.tab.c"
+#line 6094 "lalr1.tab.c"
     break;
 
   case 203: /* StatementWithoutTrailingSubstatement: ExpressionStatement  */
-#line 2572 "lalr1.y"
+#line 2583 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6093,11 +6104,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         // cout<<"in"<<$$->token;
     }
-#line 6097 "lalr1.tab.c"
+#line 6108 "lalr1.tab.c"
     break;
 
   case 204: /* StatementWithoutTrailingSubstatement: SwitchStatement  */
-#line 2581 "lalr1.y"
+#line 2592 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6106,11 +6117,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6110 "lalr1.tab.c"
+#line 6121 "lalr1.tab.c"
     break;
 
   case 205: /* StatementWithoutTrailingSubstatement: DoStatement  */
-#line 2589 "lalr1.y"
+#line 2600 "lalr1.y"
                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6119,11 +6130,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6123 "lalr1.tab.c"
+#line 6134 "lalr1.tab.c"
     break;
 
   case 206: /* StatementWithoutTrailingSubstatement: BreakStatement  */
-#line 2597 "lalr1.y"
+#line 2608 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6132,11 +6143,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6136 "lalr1.tab.c"
+#line 6147 "lalr1.tab.c"
     break;
 
   case 207: /* StatementWithoutTrailingSubstatement: ContinueStatement  */
-#line 2605 "lalr1.y"
+#line 2616 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6145,11 +6156,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6149 "lalr1.tab.c"
+#line 6160 "lalr1.tab.c"
     break;
 
   case 208: /* StatementWithoutTrailingSubstatement: ReturnStatement  */
-#line 2613 "lalr1.y"
+#line 2624 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6158,11 +6169,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6162 "lalr1.tab.c"
+#line 6173 "lalr1.tab.c"
     break;
 
   case 209: /* StatementWithoutTrailingSubstatement: SynchronizedStatement  */
-#line 2621 "lalr1.y"
+#line 2632 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6171,11 +6182,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6175 "lalr1.tab.c"
+#line 6186 "lalr1.tab.c"
     break;
 
   case 210: /* StatementWithoutTrailingSubstatement: ThrowStatement  */
-#line 2629 "lalr1.y"
+#line 2640 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6184,11 +6195,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6188 "lalr1.tab.c"
+#line 6199 "lalr1.tab.c"
     break;
 
   case 211: /* StatementWithoutTrailingSubstatement: TryStatement  */
-#line 2637 "lalr1.y"
+#line 2648 "lalr1.y"
                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementWithoutTrailingSubstatement";
@@ -6197,11 +6208,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6201 "lalr1.tab.c"
+#line 6212 "lalr1.tab.c"
     break;
 
   case 212: /* EmptyStatement: SEMICOLON  */
-#line 2647 "lalr1.y"
+#line 2658 "lalr1.y"
              {
         (yyval.node)=new astnode;
         (yyval.node)->token="EmptyStatement";
@@ -6210,11 +6221,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6214 "lalr1.tab.c"
+#line 6225 "lalr1.tab.c"
     break;
 
   case 213: /* LabeledStatement: IDENTIFIER COLON Statement  */
-#line 2657 "lalr1.y"
+#line 2668 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="LabeledStatement";
@@ -6229,11 +6240,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         m[(yyvsp[-2].node)->lexeme]=topush_label;
     }
-#line 6233 "lalr1.tab.c"
+#line 6244 "lalr1.tab.c"
     break;
 
   case 214: /* LabeledStatementNoShortIf: IDENTIFIER COLON StatementNoShortIf  */
-#line 2673 "lalr1.y"
+#line 2684 "lalr1.y"
                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="LabeledStatementNoShortIf";
@@ -6248,11 +6259,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         m[(yyvsp[-2].node)->lexeme]=topush_label;
     }
-#line 6252 "lalr1.tab.c"
+#line 6263 "lalr1.tab.c"
     break;
 
   case 215: /* ExpressionStatement: StatementExpression SEMICOLON  */
-#line 2689 "lalr1.y"
+#line 2700 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExpressionStatement";
@@ -6264,11 +6275,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[-1].node)->tac_val;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 6268 "lalr1.tab.c"
+#line 6279 "lalr1.tab.c"
     break;
 
   case 216: /* StatementExpression: Assignment  */
-#line 2702 "lalr1.y"
+#line 2713 "lalr1.y"
               {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6279,11 +6290,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6283 "lalr1.tab.c"
+#line 6294 "lalr1.tab.c"
     break;
 
   case 217: /* StatementExpression: PreIncrementExpression  */
-#line 2712 "lalr1.y"
+#line 2723 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6294,11 +6305,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6298 "lalr1.tab.c"
+#line 6309 "lalr1.tab.c"
     break;
 
   case 218: /* StatementExpression: PreDecrementExpression  */
-#line 2722 "lalr1.y"
+#line 2733 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6309,11 +6320,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6313 "lalr1.tab.c"
+#line 6324 "lalr1.tab.c"
     break;
 
   case 219: /* StatementExpression: PostIncrementExpression  */
-#line 2732 "lalr1.y"
+#line 2743 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6324,11 +6335,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6328 "lalr1.tab.c"
+#line 6339 "lalr1.tab.c"
     break;
 
   case 220: /* StatementExpression: PostDecrementExpression  */
-#line 2742 "lalr1.y"
+#line 2753 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6339,11 +6350,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6343 "lalr1.tab.c"
+#line 6354 "lalr1.tab.c"
     break;
 
   case 221: /* StatementExpression: MethodInvocation  */
-#line 2752 "lalr1.y"
+#line 2763 "lalr1.y"
                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6355,11 +6366,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         prog.push_back((yyvsp[0].node)->tac_val);
     }
-#line 6359 "lalr1.tab.c"
+#line 6370 "lalr1.tab.c"
     break;
 
   case 222: /* StatementExpression: ClassInstanceCreationExpression  */
-#line 2763 "lalr1.y"
+#line 2774 "lalr1.y"
                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6370,11 +6381,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 6374 "lalr1.tab.c"
+#line 6385 "lalr1.tab.c"
     break;
 
   case 223: /* StatementExpression: PrintStatement  */
-#line 2773 "lalr1.y"
+#line 2784 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpression";
@@ -6386,11 +6397,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         // cout<<"in StatementExpression";
     }
-#line 6390 "lalr1.tab.c"
+#line 6401 "lalr1.tab.c"
     break;
 
   case 224: /* IfThenStatement: IF OPEN_BR Expression CLOSE_BR IFMARK1 Statement IFEND1  */
-#line 2786 "lalr1.y"
+#line 2797 "lalr1.y"
                                                             { 
         (yyval.node)=new astnode;
         (yyval.node)->token="IfThenStatement";
@@ -6403,11 +6414,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6407 "lalr1.tab.c"
+#line 6418 "lalr1.tab.c"
     break;
 
   case 225: /* IfThenElseStatement: IF OPEN_BR Expression CLOSE_BR IFMARK1 StatementNoShortIf IFEND2 ELSE ELSEMARK1 Statement ELSEEND1  */
-#line 2800 "lalr1.y"
+#line 2811 "lalr1.y"
                                                                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="IfThenElseStatement";
@@ -6422,11 +6433,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6426 "lalr1.tab.c"
+#line 6437 "lalr1.tab.c"
     break;
 
   case 226: /* IfThenElseStatementNoShortIf: IF OPEN_BR Expression CLOSE_BR IFMARK1 StatementNoShortIf IFEND2 ELSE ELSEMARK1 StatementNoShortIf ELSEEND1  */
-#line 2816 "lalr1.y"
+#line 2827 "lalr1.y"
                                                                                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="IfThenElseStatementNoShortIf";
@@ -6441,11 +6452,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6445 "lalr1.tab.c"
+#line 6456 "lalr1.tab.c"
     break;
 
   case 227: /* SwitchStatement: SWITCH OPEN_BR Expression CLOSE_BR SwitchBlock  */
-#line 2832 "lalr1.y"
+#line 2843 "lalr1.y"
                                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchStatement";
@@ -6458,11 +6469,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6462 "lalr1.tab.c"
+#line 6473 "lalr1.tab.c"
     break;
 
   case 228: /* SwitchBlock: OPEN_CR CLOSE_CR  */
-#line 2846 "lalr1.y"
+#line 2857 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlock";
@@ -6472,11 +6483,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6476 "lalr1.tab.c"
+#line 6487 "lalr1.tab.c"
     break;
 
   case 229: /* SwitchBlock: OPEN_CR SYMTABS SwitchBlockStatementGroups CLOSE_CR SYMTABE  */
-#line 2855 "lalr1.y"
+#line 2866 "lalr1.y"
                                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlock";
@@ -6487,11 +6498,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6491 "lalr1.tab.c"
+#line 6502 "lalr1.tab.c"
     break;
 
   case 230: /* SwitchBlock: OPEN_CR SYMTABS SwitchLabels CLOSE_CR SYMTABE  */
-#line 2865 "lalr1.y"
+#line 2876 "lalr1.y"
                                                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlock";
@@ -6502,11 +6513,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6506 "lalr1.tab.c"
+#line 6517 "lalr1.tab.c"
     break;
 
   case 231: /* SwitchBlock: OPEN_CR SYMTABS SwitchBlockStatementGroups SwitchLabels CLOSE_CR SYMTABE  */
-#line 2875 "lalr1.y"
+#line 2886 "lalr1.y"
                                                                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlock";
@@ -6518,11 +6529,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6522 "lalr1.tab.c"
+#line 6533 "lalr1.tab.c"
     break;
 
   case 232: /* SwitchBlockStatementGroups: SwitchBlockStatementGroup  */
-#line 2888 "lalr1.y"
+#line 2899 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlockStatementGroups";
@@ -6531,11 +6542,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6535 "lalr1.tab.c"
+#line 6546 "lalr1.tab.c"
     break;
 
   case 233: /* SwitchBlockStatementGroups: SwitchBlockStatementGroups SwitchBlockStatementGroup  */
-#line 2896 "lalr1.y"
+#line 2907 "lalr1.y"
                                                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlockStatementGroups";
@@ -6545,11 +6556,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6549 "lalr1.tab.c"
+#line 6560 "lalr1.tab.c"
     break;
 
   case 234: /* SwitchBlockStatementGroup: SwitchLabels BlockStatements  */
-#line 2907 "lalr1.y"
+#line 2918 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchBlockStatementGroup";
@@ -6559,11 +6570,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6563 "lalr1.tab.c"
+#line 6574 "lalr1.tab.c"
     break;
 
   case 235: /* SwitchLabels: SwitchLabel  */
-#line 2918 "lalr1.y"
+#line 2929 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchLabels";
@@ -6572,11 +6583,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6576 "lalr1.tab.c"
+#line 6587 "lalr1.tab.c"
     break;
 
   case 236: /* SwitchLabels: SwitchLabels SwitchLabel  */
-#line 2926 "lalr1.y"
+#line 2937 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchLabels";
@@ -6586,11 +6597,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6590 "lalr1.tab.c"
+#line 6601 "lalr1.tab.c"
     break;
 
   case 237: /* SwitchLabel: CASE ConstantExpression COLON  */
-#line 2937 "lalr1.y"
+#line 2948 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchLabel";
@@ -6601,11 +6612,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6605 "lalr1.tab.c"
+#line 6616 "lalr1.tab.c"
     break;
 
   case 238: /* SwitchLabel: DEFAULT COLON  */
-#line 2947 "lalr1.y"
+#line 2958 "lalr1.y"
                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="SwitchLabel";
@@ -6615,11 +6626,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6619 "lalr1.tab.c"
+#line 6630 "lalr1.tab.c"
     break;
 
   case 239: /* WhileStatement: WHILE WHILEMARK2 OPEN_BR Expression CLOSE_BR WHILEMARK1 Statement WHILEEND1  */
-#line 2958 "lalr1.y"
+#line 2969 "lalr1.y"
                                                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="WhileStatement";
@@ -6632,11 +6643,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6636 "lalr1.tab.c"
+#line 6647 "lalr1.tab.c"
     break;
 
   case 240: /* WhileStatementNoShortIf: WHILE WHILEMARK2 OPEN_BR Expression CLOSE_BR WHILEMARK1 StatementNoShortIf WHILEEND1  */
-#line 2972 "lalr1.y"
+#line 2983 "lalr1.y"
                                                                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="WhileStatementNoShortIf";
@@ -6649,11 +6660,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6653 "lalr1.tab.c"
+#line 6664 "lalr1.tab.c"
     break;
 
   case 241: /* DoStatement: DO DOMARK1 Statement WHILE OPEN_BR Expression CLOSE_BR SEMICOLON DOEND1  */
-#line 2986 "lalr1.y"
+#line 2997 "lalr1.y"
                                                                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="DoStatement";
@@ -6668,11 +6679,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6672 "lalr1.tab.c"
+#line 6683 "lalr1.tab.c"
     break;
 
   case 242: /* ForStatement: FOR OPEN_BR FORMARK1 SEMICOLON FORMARK2 SEMICOLON CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3002 "lalr1.y"
+#line 3013 "lalr1.y"
                                                                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6686,11 +6697,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6690 "lalr1.tab.c"
+#line 6701 "lalr1.tab.c"
     break;
 
   case 243: /* ForStatement: FOR OPEN_BR FORMARK1 SEMICOLON FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3015 "lalr1.y"
+#line 3026 "lalr1.y"
                                                                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6705,11 +6716,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6709 "lalr1.tab.c"
+#line 6720 "lalr1.tab.c"
     break;
 
   case 244: /* ForStatement: FOR OPEN_BR FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3029 "lalr1.y"
+#line 3040 "lalr1.y"
                                                                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6724,11 +6735,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6728 "lalr1.tab.c"
+#line 6739 "lalr1.tab.c"
     break;
 
   case 245: /* ForStatement: FOR OPEN_BR FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3043 "lalr1.y"
+#line 3054 "lalr1.y"
                                                                                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6744,11 +6755,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6748 "lalr1.tab.c"
+#line 6759 "lalr1.tab.c"
     break;
 
   case 246: /* ForStatement: FOR OPEN_BR ForInit FORMARK1 SEMICOLON FORMARK2 SEMICOLON CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3058 "lalr1.y"
+#line 3069 "lalr1.y"
                                                                                                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6763,11 +6774,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6767 "lalr1.tab.c"
+#line 6778 "lalr1.tab.c"
     break;
 
   case 247: /* ForStatement: FOR OPEN_BR ForInit FORMARK1 SEMICOLON FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3072 "lalr1.y"
+#line 3083 "lalr1.y"
                                                                                                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6783,11 +6794,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6787 "lalr1.tab.c"
+#line 6798 "lalr1.tab.c"
     break;
 
   case 248: /* ForStatement: FOR OPEN_BR ForInit FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3087 "lalr1.y"
+#line 3098 "lalr1.y"
                                                                                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6803,11 +6814,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6807 "lalr1.tab.c"
+#line 6818 "lalr1.tab.c"
     break;
 
   case 249: /* ForStatement: FOR OPEN_BR ForInit FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 Statement FOREND1  */
-#line 3102 "lalr1.y"
+#line 3113 "lalr1.y"
                                                                                                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatement";
@@ -6824,11 +6835,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6828 "lalr1.tab.c"
+#line 6839 "lalr1.tab.c"
     break;
 
   case 250: /* ForStatementNoShortIf: FOR OPEN_BR FORMARK1 SEMICOLON FORMARK2 SEMICOLON CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3120 "lalr1.y"
+#line 3131 "lalr1.y"
                                                                                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6842,11 +6853,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6846 "lalr1.tab.c"
+#line 6857 "lalr1.tab.c"
     break;
 
   case 251: /* ForStatementNoShortIf: FOR OPEN_BR FORMARK1 SEMICOLON FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3133 "lalr1.y"
+#line 3144 "lalr1.y"
                                                                                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6861,11 +6872,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6865 "lalr1.tab.c"
+#line 6876 "lalr1.tab.c"
     break;
 
   case 252: /* ForStatementNoShortIf: FOR OPEN_BR FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3147 "lalr1.y"
+#line 3158 "lalr1.y"
                                                                                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6880,11 +6891,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6884 "lalr1.tab.c"
+#line 6895 "lalr1.tab.c"
     break;
 
   case 253: /* ForStatementNoShortIf: FOR OPEN_BR FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3161 "lalr1.y"
+#line 3172 "lalr1.y"
                                                                                                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6900,11 +6911,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6904 "lalr1.tab.c"
+#line 6915 "lalr1.tab.c"
     break;
 
   case 254: /* ForStatementNoShortIf: FOR OPEN_BR ForInit FORMARK1 SEMICOLON FORMARK2 SEMICOLON CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3176 "lalr1.y"
+#line 3187 "lalr1.y"
                                                                                                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6919,11 +6930,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6923 "lalr1.tab.c"
+#line 6934 "lalr1.tab.c"
     break;
 
   case 255: /* ForStatementNoShortIf: FOR OPEN_BR ForInit FORMARK1 SEMICOLON FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3190 "lalr1.y"
+#line 3201 "lalr1.y"
                                                                                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6939,11 +6950,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6943 "lalr1.tab.c"
+#line 6954 "lalr1.tab.c"
     break;
 
   case 256: /* ForStatementNoShortIf: FOR OPEN_BR ForInit FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3205 "lalr1.y"
+#line 3216 "lalr1.y"
                                                                                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6959,11 +6970,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6963 "lalr1.tab.c"
+#line 6974 "lalr1.tab.c"
     break;
 
   case 257: /* ForStatementNoShortIf: FOR OPEN_BR ForInit FORMARK1 SEMICOLON Expression FORMARK2 SEMICOLON ForUpdate CLOSE_BR FORMARK3 StatementNoShortIf FOREND1  */
-#line 3220 "lalr1.y"
+#line 3231 "lalr1.y"
                                                                                                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForStatementNoShortIf";
@@ -6980,11 +6991,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 6984 "lalr1.tab.c"
+#line 6995 "lalr1.tab.c"
     break;
 
   case 258: /* ForInit: StatementExpressionList  */
-#line 3238 "lalr1.y"
+#line 3249 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForInit";
@@ -6994,11 +7005,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
     }
-#line 6998 "lalr1.tab.c"
+#line 7009 "lalr1.tab.c"
     break;
 
   case 259: /* ForInit: LocalVariableDeclaration  */
-#line 3247 "lalr1.y"
+#line 3258 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForInit";
@@ -7013,11 +7024,11 @@ yyreduce:
         // buffer[$1->value]=$1->type;
         // cout<<"in"<<$$->token;
     }
-#line 7017 "lalr1.tab.c"
+#line 7028 "lalr1.tab.c"
     break;
 
   case 260: /* ForUpdate: StatementExpressionList  */
-#line 3263 "lalr1.y"
+#line 3274 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="ForUpdate";
@@ -7027,11 +7038,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
     }
-#line 7031 "lalr1.tab.c"
+#line 7042 "lalr1.tab.c"
     break;
 
   case 261: /* StatementExpressionList: StatementExpression  */
-#line 3274 "lalr1.y"
+#line 3285 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpressionList";
@@ -7041,11 +7052,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
     }
-#line 7045 "lalr1.tab.c"
+#line 7056 "lalr1.tab.c"
     break;
 
   case 262: /* StatementExpressionList: StatementExpressionList COMMA StatementExpression  */
-#line 3283 "lalr1.y"
+#line 3294 "lalr1.y"
                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="StatementExpressionList";
@@ -7057,11 +7068,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[-2].node)->tac_val=","+(yyvsp[-2].node)->tac_val;
     }
-#line 7061 "lalr1.tab.c"
+#line 7072 "lalr1.tab.c"
     break;
 
   case 263: /* BreakStatement: BREAK SEMICOLON  */
-#line 3296 "lalr1.y"
+#line 3307 "lalr1.y"
                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="BreakStatement";
@@ -7075,11 +7086,11 @@ yyreduce:
         tac="goto "+toget_label;
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
     }
-#line 7079 "lalr1.tab.c"
+#line 7090 "lalr1.tab.c"
     break;
 
   case 264: /* BreakStatement: BREAK IDENTIFIER SEMICOLON  */
-#line 3309 "lalr1.y"
+#line 3320 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="BreakStatement";
@@ -7090,11 +7101,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7094 "lalr1.tab.c"
+#line 7105 "lalr1.tab.c"
     break;
 
   case 265: /* ContinueStatement: CONTINUE SEMICOLON  */
-#line 3321 "lalr1.y"
+#line 3332 "lalr1.y"
                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ContinueStatement";
@@ -7108,11 +7119,11 @@ yyreduce:
         tac="goto "+toget_label;
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
     }
-#line 7112 "lalr1.tab.c"
+#line 7123 "lalr1.tab.c"
     break;
 
   case 266: /* ContinueStatement: CONTINUE IDENTIFIER SEMICOLON  */
-#line 3334 "lalr1.y"
+#line 3345 "lalr1.y"
                                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="ContinueStatement";
@@ -7127,11 +7138,11 @@ yyreduce:
         tac="goto "+toget_label;
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
     }
-#line 7131 "lalr1.tab.c"
+#line 7142 "lalr1.tab.c"
     break;
 
   case 267: /* ReturnStatement: RETURN SEMICOLON  */
-#line 3350 "lalr1.y"
+#line 3361 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="ReturnStatement";
@@ -7144,11 +7155,11 @@ yyreduce:
         (yyval.node)->tac_val="return";
         (yyval.node)->type="void";
     }
-#line 7148 "lalr1.tab.c"
+#line 7159 "lalr1.tab.c"
     break;
 
   case 268: /* ReturnStatement: RETURN Expression SEMICOLON  */
-#line 3362 "lalr1.y"
+#line 3373 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="ReturnStatement";
@@ -7166,11 +7177,11 @@ yyreduce:
         (yyval.node)->tac_val=tac;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 7170 "lalr1.tab.c"
+#line 7181 "lalr1.tab.c"
     break;
 
   case 269: /* ThrowStatement: THROW Expression SEMICOLON  */
-#line 3381 "lalr1.y"
+#line 3392 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ThrowStatement";
@@ -7181,11 +7192,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7185 "lalr1.tab.c"
+#line 7196 "lalr1.tab.c"
     break;
 
   case 270: /* SynchronizedStatement: SYNCHRONIZED OPEN_BR Expression CLOSE_BR Block  */
-#line 3393 "lalr1.y"
+#line 3404 "lalr1.y"
                                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="SynchronizedStatement";
@@ -7198,11 +7209,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7202 "lalr1.tab.c"
+#line 7213 "lalr1.tab.c"
     break;
 
   case 271: /* TryStatement: TRY Block Catches  */
-#line 3407 "lalr1.y"
+#line 3418 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="TryStatement";
@@ -7213,11 +7224,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7217 "lalr1.tab.c"
+#line 7228 "lalr1.tab.c"
     break;
 
   case 272: /* TryStatement: TRY Block Finally  */
-#line 3417 "lalr1.y"
+#line 3428 "lalr1.y"
                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="TryStatement";
@@ -7228,11 +7239,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7232 "lalr1.tab.c"
+#line 7243 "lalr1.tab.c"
     break;
 
   case 273: /* TryStatement: TRY Block Catches Finally  */
-#line 3427 "lalr1.y"
+#line 3438 "lalr1.y"
                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="TryStatement";
@@ -7244,11 +7255,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7248 "lalr1.tab.c"
+#line 7259 "lalr1.tab.c"
     break;
 
   case 274: /* Catches: CatchClause  */
-#line 3440 "lalr1.y"
+#line 3451 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="Catches";
@@ -7257,11 +7268,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7261 "lalr1.tab.c"
+#line 7272 "lalr1.tab.c"
     break;
 
   case 275: /* Catches: Catches CatchClause  */
-#line 3448 "lalr1.y"
+#line 3459 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="Catches";
@@ -7271,11 +7282,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7275 "lalr1.tab.c"
+#line 7286 "lalr1.tab.c"
     break;
 
   case 276: /* CatchClause: CATCH OPEN_BR FormalParameter CLOSE_BR Block  */
-#line 3459 "lalr1.y"
+#line 3470 "lalr1.y"
                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="CatchClause";
@@ -7288,11 +7299,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7292 "lalr1.tab.c"
+#line 7303 "lalr1.tab.c"
     break;
 
   case 277: /* Finally: FINALLY Block  */
-#line 3473 "lalr1.y"
+#line 3484 "lalr1.y"
                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="Finally";
@@ -7302,11 +7313,11 @@ yyreduce:
         (yyval.node)->children=v;
         // cout<<"in"<<$$->token;
     }
-#line 7306 "lalr1.tab.c"
+#line 7317 "lalr1.tab.c"
     break;
 
   case 278: /* Primary: PrimaryNoNewArray  */
-#line 3487 "lalr1.y"
+#line 3498 "lalr1.y"
                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="Primary";
@@ -7327,11 +7338,11 @@ yyreduce:
             if((yyval.node)->dims!=t->dims) cout<<"Error array of not same dimension";
         }
     }
-#line 7331 "lalr1.tab.c"
+#line 7342 "lalr1.tab.c"
     break;
 
   case 279: /* Primary: ArrayCreationExpression  */
-#line 3507 "lalr1.y"
+#line 3518 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="Primary";
@@ -7344,11 +7355,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 7348 "lalr1.tab.c"
+#line 7359 "lalr1.tab.c"
     break;
 
   case 280: /* PrimaryNoNewArray: Literal  */
-#line 3521 "lalr1.y"
+#line 3532 "lalr1.y"
            {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7361,11 +7372,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 7365 "lalr1.tab.c"
+#line 7376 "lalr1.tab.c"
     break;
 
   case 281: /* PrimaryNoNewArray: THIS  */
-#line 3533 "lalr1.y"
+#line 3544 "lalr1.y"
          {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7376,11 +7387,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         (yyval.node)->type="this";
     }
-#line 7380 "lalr1.tab.c"
+#line 7391 "lalr1.tab.c"
     break;
 
   case 282: /* PrimaryNoNewArray: OPEN_BR Expression CLOSE_BR  */
-#line 3543 "lalr1.y"
+#line 3554 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7398,11 +7409,11 @@ yyreduce:
         }
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 7402 "lalr1.tab.c"
+#line 7413 "lalr1.tab.c"
     break;
 
   case 283: /* PrimaryNoNewArray: ClassInstanceCreationExpression  */
-#line 3560 "lalr1.y"
+#line 3571 "lalr1.y"
                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7414,11 +7425,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
          (yyval.node)->type=(yyvsp[0].node)->type; // NEED TO SEE
     }
-#line 7418 "lalr1.tab.c"
+#line 7429 "lalr1.tab.c"
     break;
 
   case 284: /* PrimaryNoNewArray: FieldAccess  */
-#line 3571 "lalr1.y"
+#line 3582 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7430,11 +7441,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->flag=(yyvsp[0].node)->flag;
     }
-#line 7434 "lalr1.tab.c"
+#line 7445 "lalr1.tab.c"
     break;
 
   case 285: /* PrimaryNoNewArray: MethodInvocation  */
-#line 3582 "lalr1.y"
+#line 3593 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7448,11 +7459,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 7452 "lalr1.tab.c"
+#line 7463 "lalr1.tab.c"
     break;
 
   case 286: /* PrimaryNoNewArray: ArrayAccess  */
-#line 3595 "lalr1.y"
+#line 3606 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="PrimaryNoNewArray";
@@ -7466,11 +7477,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->value=(yyvsp[0].node)->value;
     }
-#line 7470 "lalr1.tab.c"
+#line 7481 "lalr1.tab.c"
     break;
 
   case 287: /* ClassInstanceCreationExpression: NEW ClassType OPEN_BR CLOSE_BR  */
-#line 3611 "lalr1.y"
+#line 3622 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="ClassInstanceCreationExpression";
@@ -7502,11 +7513,11 @@ yyreduce:
         (yyval.node)->flag=3;
         (yyval.node)->type=(yyvsp[-2].node)->type;
     }
-#line 7506 "lalr1.tab.c"
+#line 7517 "lalr1.tab.c"
     break;
 
   case 288: /* ClassInstanceCreationExpression: NEW ClassType OPEN_BR ArgumentList CLOSE_BR  */
-#line 3642 "lalr1.y"
+#line 3653 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="ClassInstanceCreationExpression";
@@ -7545,11 +7556,11 @@ yyreduce:
         (yyval.node)->flag=3;
         (yyval.node)->type=(yyvsp[-3].node)->type;
     }
-#line 7549 "lalr1.tab.c"
+#line 7560 "lalr1.tab.c"
     break;
 
   case 289: /* ArgumentList: Expression  */
-#line 3682 "lalr1.y"
+#line 3693 "lalr1.y"
               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArgumentList";
@@ -7560,11 +7571,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 7564 "lalr1.tab.c"
+#line 7575 "lalr1.tab.c"
     break;
 
   case 290: /* ArgumentList: ArgumentList COMMA Expression  */
-#line 3692 "lalr1.y"
+#line 3703 "lalr1.y"
                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArgumentList";
@@ -7577,11 +7588,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[-2].node)->tac_val+","+(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[-2].node)->type+","+(yyvsp[0].node)->type;
     }
-#line 7581 "lalr1.tab.c"
+#line 7592 "lalr1.tab.c"
     break;
 
   case 291: /* ArrayCreationExpression: NEW PrimitiveType DimExprs  */
-#line 3706 "lalr1.y"
+#line 3717 "lalr1.y"
                                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayCreationExpression";
@@ -7599,11 +7610,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-1].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 7603 "lalr1.tab.c"
+#line 7614 "lalr1.tab.c"
     break;
 
   case 292: /* ArrayCreationExpression: NEW PrimitiveType DimExprs Dims  */
-#line 3723 "lalr1.y"
+#line 3734 "lalr1.y"
                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayCreationExpression";
@@ -7621,11 +7632,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-2].node)->type;
         (yyval.node)->dims=(yyvsp[-1].node)->dims+(yyvsp[0].node)->dims;
     }
-#line 7625 "lalr1.tab.c"
+#line 7636 "lalr1.tab.c"
     break;
 
   case 293: /* ArrayCreationExpression: NEW ClassOrInterfaceType DimExprs  */
-#line 3740 "lalr1.y"
+#line 3751 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayCreationExpression";
@@ -7643,11 +7654,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-1].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 7647 "lalr1.tab.c"
+#line 7658 "lalr1.tab.c"
     break;
 
   case 294: /* ArrayCreationExpression: NEW ClassOrInterfaceType DimExprs Dims  */
-#line 3757 "lalr1.y"
+#line 3768 "lalr1.y"
                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayCreationExpression";
@@ -7666,11 +7677,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-2].node)->type;
         (yyval.node)->dims=(yyvsp[-1].node)->dims+(yyvsp[0].node)->dims;
     }
-#line 7670 "lalr1.tab.c"
+#line 7681 "lalr1.tab.c"
     break;
 
   case 295: /* DimExprs: DimExpr  */
-#line 3777 "lalr1.y"
+#line 3788 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="DimExprs";
@@ -7682,11 +7693,11 @@ yyreduce:
         (yyval.node)->dims=(yyvsp[0].node)->dims;
         (yyval.node)->flag=(yyvsp[0].node)->flag;
     }
-#line 7686 "lalr1.tab.c"
+#line 7697 "lalr1.tab.c"
     break;
 
   case 296: /* DimExprs: DimExprs DimExpr  */
-#line 3788 "lalr1.y"
+#line 3799 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="DimExprs";
@@ -7699,11 +7710,11 @@ yyreduce:
         (yyval.node)->dims=(yyvsp[-1].node)->dims+1;
         (yyval.node)->flag=(yyvsp[-1].node)->flag;
     }
-#line 7703 "lalr1.tab.c"
+#line 7714 "lalr1.tab.c"
     break;
 
   case 297: /* DimExpr: OPEN_SQ Expression CLOSE_SQ  */
-#line 3802 "lalr1.y"
+#line 3813 "lalr1.y"
                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="DimExpr";
@@ -7720,11 +7731,11 @@ yyreduce:
         (yyval.node)->dims=1;
         (yyval.node)->flag=4;
     }
-#line 7724 "lalr1.tab.c"
+#line 7735 "lalr1.tab.c"
     break;
 
   case 298: /* Dims: OPEN_SQ CLOSE_SQ  */
-#line 3820 "lalr1.y"
+#line 3831 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="Dims";
@@ -7735,11 +7746,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val="[]";
     }
-#line 7739 "lalr1.tab.c"
+#line 7750 "lalr1.tab.c"
     break;
 
   case 299: /* Dims: Dims OPEN_SQ CLOSE_SQ  */
-#line 3830 "lalr1.y"
+#line 3841 "lalr1.y"
                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="Dims";
@@ -7751,11 +7762,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->tac_val=(yyvsp[-2].node)->tac_val+"[]";
     }
-#line 7755 "lalr1.tab.c"
+#line 7766 "lalr1.tab.c"
     break;
 
   case 300: /* FieldAccess: Primary PERIOD IDENTIFIER  */
-#line 3843 "lalr1.y"
+#line 3854 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="FieldAccess";
@@ -7777,11 +7788,11 @@ yyreduce:
             (yyval.node)->flag=0;
         }
     }
-#line 7781 "lalr1.tab.c"
+#line 7792 "lalr1.tab.c"
     break;
 
   case 301: /* FieldAccess: SUPER PERIOD IDENTIFIER  */
-#line 3864 "lalr1.y"
+#line 3875 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="FieldAccess";
@@ -7794,11 +7805,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[-2].node)->lexeme+"."+(yyvsp[0].node)->lexeme;
         (yyval.node)->type="fieldaccess";
     }
-#line 7798 "lalr1.tab.c"
+#line 7809 "lalr1.tab.c"
     break;
 
   case 302: /* MethodInvocation: Name OPEN_BR CLOSE_BR  */
-#line 3878 "lalr1.y"
+#line 3889 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -7869,11 +7880,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyval.node)->tac_val+"\n"+"deallocate 0";
         (yyval.node)->flag=2;                
     }
-#line 7873 "lalr1.tab.c"
+#line 7884 "lalr1.tab.c"
     break;
 
   case 303: /* MethodInvocation: Name OPEN_BR ArgumentList CLOSE_BR  */
-#line 3948 "lalr1.y"
+#line 3959 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -7964,11 +7975,11 @@ yyreduce:
         }
         (yyval.node)->flag=2; 
     }
-#line 7968 "lalr1.tab.c"
+#line 7979 "lalr1.tab.c"
     break;
 
   case 304: /* MethodInvocation: Primary PERIOD IDENTIFIER OPEN_BR CLOSE_BR  */
-#line 4038 "lalr1.y"
+#line 4049 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -7997,11 +8008,11 @@ yyreduce:
         }
         (yyval.node)->flag=2;     
     }
-#line 8001 "lalr1.tab.c"
+#line 8012 "lalr1.tab.c"
     break;
 
   case 305: /* MethodInvocation: Primary PERIOD IDENTIFIER OPEN_BR ArgumentList CLOSE_BR  */
-#line 4066 "lalr1.y"
+#line 4077 "lalr1.y"
                                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -8034,11 +8045,11 @@ yyreduce:
         }
         (yyval.node)->flag=2;   
     }
-#line 8038 "lalr1.tab.c"
+#line 8049 "lalr1.tab.c"
     break;
 
   case 306: /* MethodInvocation: SUPER PERIOD IDENTIFIER OPEN_BR CLOSE_BR  */
-#line 4098 "lalr1.y"
+#line 4109 "lalr1.y"
                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -8059,11 +8070,11 @@ yyreduce:
         }  
         (yyval.node)->flag=2;   
     }
-#line 8063 "lalr1.tab.c"
+#line 8074 "lalr1.tab.c"
     break;
 
   case 307: /* MethodInvocation: SUPER PERIOD IDENTIFIER OPEN_BR ArgumentList CLOSE_BR  */
-#line 4118 "lalr1.y"
+#line 4129 "lalr1.y"
                                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="MethodInvocation";
@@ -8095,11 +8106,11 @@ yyreduce:
             if(args[i]!=args1[i]) cout<<"Argument mismatch";
         }
     }
-#line 8099 "lalr1.tab.c"
+#line 8110 "lalr1.tab.c"
     break;
 
   case 308: /* ArrayAccess: Name OPEN_SQ Expression CLOSE_SQ  */
-#line 4151 "lalr1.y"
+#line 4162 "lalr1.y"
                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayAccess";
@@ -8132,11 +8143,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-3].node)->type;
         (yyval.node)->value=(yyvsp[-3].node)->value;
     }
-#line 8136 "lalr1.tab.c"
+#line 8147 "lalr1.tab.c"
     break;
 
   case 309: /* ArrayAccess: PrimaryNoNewArray OPEN_SQ Expression CLOSE_SQ  */
-#line 4183 "lalr1.y"
+#line 4194 "lalr1.y"
                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="ArrayAccess";
@@ -8166,11 +8177,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[-3].node)->type;
         (yyval.node)->value=(yyvsp[-3].node)->value;
     }
-#line 8170 "lalr1.tab.c"
+#line 8181 "lalr1.tab.c"
     break;
 
   case 310: /* PostfixExpression: Primary  */
-#line 4214 "lalr1.y"
+#line 4225 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixExpression";
@@ -8184,11 +8195,11 @@ yyreduce:
         (yyval.node)->dims=(yyvsp[0].node)->dims;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8188 "lalr1.tab.c"
+#line 8199 "lalr1.tab.c"
     break;
 
   case 311: /* PostfixExpression: Name  */
-#line 4227 "lalr1.y"
+#line 4238 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixExpression";
@@ -8201,11 +8212,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8205 "lalr1.tab.c"
+#line 8216 "lalr1.tab.c"
     break;
 
   case 312: /* PostfixExpression: PostIncrementExpression  */
-#line 4239 "lalr1.y"
+#line 4250 "lalr1.y"
                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixExpression";
@@ -8217,11 +8228,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8221 "lalr1.tab.c"
+#line 8232 "lalr1.tab.c"
     break;
 
   case 313: /* PostfixExpression: PostDecrementExpression  */
-#line 4250 "lalr1.y"
+#line 4261 "lalr1.y"
                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixExpression";
@@ -8233,11 +8244,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8237 "lalr1.tab.c"
+#line 8248 "lalr1.tab.c"
     break;
 
   case 314: /* PostIncrementExpression: PostfixExpression INC  */
-#line 4263 "lalr1.y"
+#line 4274 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixIncrementExpression";
@@ -8257,11 +8268,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 8261 "lalr1.tab.c"
+#line 8272 "lalr1.tab.c"
     break;
 
   case 315: /* PostDecrementExpression: PostfixExpression DEC  */
-#line 4284 "lalr1.y"
+#line 4295 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="PostfixDecrementExpression";
@@ -8281,11 +8292,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 8285 "lalr1.tab.c"
+#line 8296 "lalr1.tab.c"
     break;
 
   case 316: /* UnaryExpression: PreIncrementExpression  */
-#line 4305 "lalr1.y"
+#line 4316 "lalr1.y"
                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpression";
@@ -8298,11 +8309,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8302 "lalr1.tab.c"
+#line 8313 "lalr1.tab.c"
     break;
 
   case 317: /* UnaryExpression: PreDecrementExpression  */
-#line 4317 "lalr1.y"
+#line 4328 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpression";
@@ -8314,11 +8325,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8318 "lalr1.tab.c"
+#line 8329 "lalr1.tab.c"
     break;
 
   case 318: /* UnaryExpression: ADD UnaryExpression  */
-#line 4328 "lalr1.y"
+#line 4339 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpression";
@@ -8336,11 +8347,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8340 "lalr1.tab.c"
+#line 8351 "lalr1.tab.c"
     break;
 
   case 319: /* UnaryExpression: SUB UnaryExpression  */
-#line 4345 "lalr1.y"
+#line 4356 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpression";
@@ -8358,11 +8369,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8362 "lalr1.tab.c"
+#line 8373 "lalr1.tab.c"
     break;
 
   case 320: /* UnaryExpression: UnaryExpressionNotPlusMinus  */
-#line 4362 "lalr1.y"
+#line 4373 "lalr1.y"
                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpression";
@@ -8376,11 +8387,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8380 "lalr1.tab.c"
+#line 8391 "lalr1.tab.c"
     break;
 
   case 321: /* PreIncrementExpression: INC UnaryExpression  */
-#line 4377 "lalr1.y"
+#line 4388 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="PreIncrementExpression";
@@ -8400,11 +8411,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 8404 "lalr1.tab.c"
+#line 8415 "lalr1.tab.c"
     break;
 
   case 322: /* PreDecrementExpression: DEC UnaryExpression  */
-#line 4398 "lalr1.y"
+#line 4409 "lalr1.y"
                            {
         (yyval.node)=new astnode;
         (yyval.node)->token="PreDecrementExpression";
@@ -8424,11 +8435,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-1].node)->type;
     }
-#line 8428 "lalr1.tab.c"
+#line 8439 "lalr1.tab.c"
     break;
 
   case 323: /* UnaryExpressionNotPlusMinus: PostfixExpression  */
-#line 4419 "lalr1.y"
+#line 4430 "lalr1.y"
                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpressionNotPlusMinus";
@@ -8442,11 +8453,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8446 "lalr1.tab.c"
+#line 8457 "lalr1.tab.c"
     break;
 
   case 324: /* UnaryExpressionNotPlusMinus: TILDE UnaryExpression  */
-#line 4432 "lalr1.y"
+#line 4443 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpressionNotPlusMinus";
@@ -8464,11 +8475,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8468 "lalr1.tab.c"
+#line 8479 "lalr1.tab.c"
     break;
 
   case 325: /* UnaryExpressionNotPlusMinus: NOT UnaryExpression  */
-#line 4449 "lalr1.y"
+#line 4460 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpressionNotPlusMinus";
@@ -8486,11 +8497,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8490 "lalr1.tab.c"
+#line 8501 "lalr1.tab.c"
     break;
 
   case 326: /* UnaryExpressionNotPlusMinus: CastExpression  */
-#line 4466 "lalr1.y"
+#line 4477 "lalr1.y"
                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="UnaryExpressionNotPlusMinus";
@@ -8501,11 +8512,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 8505 "lalr1.tab.c"
+#line 8516 "lalr1.tab.c"
     break;
 
   case 327: /* CastExpression: OPEN_BR PrimitiveType CLOSE_BR UnaryExpression  */
-#line 4478 "lalr1.y"
+#line 4489 "lalr1.y"
                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="CastExpression";
@@ -8522,11 +8533,11 @@ yyreduce:
         (yyval.node)->tac_val=temp;
         (yyval.node)->type=(yyvsp[-2].node)->type;
     }
-#line 8526 "lalr1.tab.c"
+#line 8537 "lalr1.tab.c"
     break;
 
   case 328: /* CastExpression: OPEN_BR PrimitiveType Dims CLOSE_BR UnaryExpression  */
-#line 4494 "lalr1.y"
+#line 4505 "lalr1.y"
                                                          {
         (yyval.node)=new astnode;
         (yyval.node)->token="CastExpression";
@@ -8544,11 +8555,11 @@ yyreduce:
         (yyval.node)->tac_val=temp;
         (yyval.node)->type=(yyvsp[-3].node)->type;
     }
-#line 8548 "lalr1.tab.c"
+#line 8559 "lalr1.tab.c"
     break;
 
   case 329: /* CastExpression: OPEN_BR Expression CLOSE_BR UnaryExpressionNotPlusMinus  */
-#line 4511 "lalr1.y"
+#line 4522 "lalr1.y"
                                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="CastExpression";
@@ -8561,11 +8572,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[-2].node)->type;
     }
-#line 8565 "lalr1.tab.c"
+#line 8576 "lalr1.tab.c"
     break;
 
   case 330: /* CastExpression: OPEN_BR Name Dims CLOSE_BR UnaryExpressionNotPlusMinus  */
-#line 4523 "lalr1.y"
+#line 4534 "lalr1.y"
                                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="CastExpression";
@@ -8582,11 +8593,11 @@ yyreduce:
         // tac=var+" = cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
         // tac=to_string(line++)+" "+tac; prog.push_back(tac);
     }
-#line 8586 "lalr1.tab.c"
+#line 8597 "lalr1.tab.c"
     break;
 
   case 331: /* MultiplicativeExpression: UnaryExpression  */
-#line 4541 "lalr1.y"
+#line 4552 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="MultiplicativeExpression";
@@ -8600,11 +8611,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8604 "lalr1.tab.c"
+#line 8615 "lalr1.tab.c"
     break;
 
   case 332: /* MultiplicativeExpression: MultiplicativeExpression MUL UnaryExpression  */
-#line 4554 "lalr1.y"
+#line 4565 "lalr1.y"
                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="MultiplicativeExpression";
@@ -8641,11 +8652,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8645 "lalr1.tab.c"
+#line 8656 "lalr1.tab.c"
     break;
 
   case 333: /* MultiplicativeExpression: MultiplicativeExpression QUO UnaryExpression  */
-#line 4590 "lalr1.y"
+#line 4601 "lalr1.y"
                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="MultiplicativeExpression";
@@ -8682,11 +8693,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8686 "lalr1.tab.c"
+#line 8697 "lalr1.tab.c"
     break;
 
   case 334: /* MultiplicativeExpression: MultiplicativeExpression REM UnaryExpression  */
-#line 4626 "lalr1.y"
+#line 4637 "lalr1.y"
                                                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="MultiplicativeExpression";
@@ -8723,11 +8734,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8727 "lalr1.tab.c"
+#line 8738 "lalr1.tab.c"
     break;
 
   case 335: /* AdditiveExpression: MultiplicativeExpression  */
-#line 4664 "lalr1.y"
+#line 4675 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AdditiveExpression";
@@ -8741,11 +8752,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8745 "lalr1.tab.c"
+#line 8756 "lalr1.tab.c"
     break;
 
   case 336: /* AdditiveExpression: AdditiveExpression ADD MultiplicativeExpression  */
-#line 4677 "lalr1.y"
+#line 4688 "lalr1.y"
                                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="AdditiveExpression";
@@ -8783,11 +8794,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8787 "lalr1.tab.c"
+#line 8798 "lalr1.tab.c"
     break;
 
   case 337: /* AdditiveExpression: AdditiveExpression SUB MultiplicativeExpression  */
-#line 4714 "lalr1.y"
+#line 4725 "lalr1.y"
                                                         {
         (yyval.node)=new astnode;
         (yyval.node)->token="AdditiveExpression";
@@ -8824,11 +8835,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8828 "lalr1.tab.c"
+#line 8839 "lalr1.tab.c"
     break;
 
   case 338: /* ShiftExpression: AdditiveExpression  */
-#line 4752 "lalr1.y"
+#line 4763 "lalr1.y"
                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="ShiftExpression";
@@ -8842,11 +8853,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8846 "lalr1.tab.c"
+#line 8857 "lalr1.tab.c"
     break;
 
   case 339: /* ShiftExpression: ShiftExpression SHL AdditiveExpression  */
-#line 4765 "lalr1.y"
+#line 4776 "lalr1.y"
                                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="ShiftExpression";
@@ -8883,11 +8894,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8887 "lalr1.tab.c"
+#line 8898 "lalr1.tab.c"
     break;
 
   case 340: /* ShiftExpression: ShiftExpression SHR AdditiveExpression  */
-#line 4801 "lalr1.y"
+#line 4812 "lalr1.y"
                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ShiftExpression";
@@ -8924,11 +8935,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8928 "lalr1.tab.c"
+#line 8939 "lalr1.tab.c"
     break;
 
   case 341: /* ShiftExpression: ShiftExpression GR AdditiveExpression  */
-#line 4837 "lalr1.y"
+#line 4848 "lalr1.y"
                                               {
         (yyval.node)=new astnode;
         (yyval.node)->token="ShiftExpression";
@@ -8965,11 +8976,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 8969 "lalr1.tab.c"
+#line 8980 "lalr1.tab.c"
     break;
 
   case 342: /* RelationalExpression: ShiftExpression  */
-#line 4875 "lalr1.y"
+#line 4886 "lalr1.y"
                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -8983,11 +8994,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 8987 "lalr1.tab.c"
+#line 8998 "lalr1.tab.c"
     break;
 
   case 343: /* RelationalExpression: RelationalExpression LSS ShiftExpression  */
-#line 4888 "lalr1.y"
+#line 4899 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -9024,11 +9035,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9028 "lalr1.tab.c"
+#line 9039 "lalr1.tab.c"
     break;
 
   case 344: /* RelationalExpression: RelationalExpression GTR ShiftExpression  */
-#line 4924 "lalr1.y"
+#line 4935 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -9065,11 +9076,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9069 "lalr1.tab.c"
+#line 9080 "lalr1.tab.c"
     break;
 
   case 345: /* RelationalExpression: RelationalExpression LEQ ShiftExpression  */
-#line 4960 "lalr1.y"
+#line 4971 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -9106,11 +9117,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9110 "lalr1.tab.c"
+#line 9121 "lalr1.tab.c"
     break;
 
   case 346: /* RelationalExpression: RelationalExpression GEQ ShiftExpression  */
-#line 4996 "lalr1.y"
+#line 5007 "lalr1.y"
                                                  {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -9147,11 +9158,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9151 "lalr1.tab.c"
+#line 9162 "lalr1.tab.c"
     break;
 
   case 347: /* RelationalExpression: RelationalExpression INSTANCEOF ReferenceType  */
-#line 5032 "lalr1.y"
+#line 5043 "lalr1.y"
                                                       {
         (yyval.node)=new astnode;
         (yyval.node)->token="RelationalExpression";
@@ -9172,11 +9183,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         (yyval.node)->tac_val=temp1;
     }
-#line 9176 "lalr1.tab.c"
+#line 9187 "lalr1.tab.c"
     break;
 
   case 348: /* EqualityExpression: RelationalExpression  */
-#line 5054 "lalr1.y"
+#line 5065 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="EqualityExpression";
@@ -9190,11 +9201,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9194 "lalr1.tab.c"
+#line 9205 "lalr1.tab.c"
     break;
 
   case 349: /* EqualityExpression: EqualityExpression EQL RelationalExpression  */
-#line 5067 "lalr1.y"
+#line 5078 "lalr1.y"
                                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="EqualityExpression";
@@ -9231,11 +9242,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9235 "lalr1.tab.c"
+#line 9246 "lalr1.tab.c"
     break;
 
   case 350: /* EqualityExpression: EqualityExpression NEQ RelationalExpression  */
-#line 5103 "lalr1.y"
+#line 5114 "lalr1.y"
                                                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="EqualityExpression";
@@ -9272,11 +9283,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9276 "lalr1.tab.c"
+#line 9287 "lalr1.tab.c"
     break;
 
   case 351: /* AndExpression: EqualityExpression  */
-#line 5141 "lalr1.y"
+#line 5152 "lalr1.y"
                           {
         (yyval.node)=new astnode;
         (yyval.node)->token="AndExpression";
@@ -9290,11 +9301,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9294 "lalr1.tab.c"
+#line 9305 "lalr1.tab.c"
     break;
 
   case 352: /* AndExpression: AndExpression AMPERSAT EqualityExpression  */
-#line 5154 "lalr1.y"
+#line 5165 "lalr1.y"
                                                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="AndExpression";
@@ -9331,11 +9342,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9335 "lalr1.tab.c"
+#line 9346 "lalr1.tab.c"
     break;
 
   case 353: /* ExclusiveOrExpression: AndExpression  */
-#line 5192 "lalr1.y"
+#line 5203 "lalr1.y"
                      {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExclusiveOrExpression";
@@ -9349,11 +9360,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9353 "lalr1.tab.c"
+#line 9364 "lalr1.tab.c"
     break;
 
   case 354: /* ExclusiveOrExpression: ExclusiveOrExpression XOR AndExpression  */
-#line 5205 "lalr1.y"
+#line 5216 "lalr1.y"
                                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ExclusiveOrExpression";
@@ -9390,11 +9401,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9394 "lalr1.tab.c"
+#line 9405 "lalr1.tab.c"
     break;
 
   case 355: /* InclusiveOrExpression: ExclusiveOrExpression  */
-#line 5243 "lalr1.y"
+#line 5254 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="InclusiveOrExpression";
@@ -9408,11 +9419,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9412 "lalr1.tab.c"
+#line 9423 "lalr1.tab.c"
     break;
 
   case 356: /* InclusiveOrExpression: InclusiveOrExpression OR ExclusiveOrExpression  */
-#line 5256 "lalr1.y"
+#line 5267 "lalr1.y"
                                                        {
         (yyval.node)=new astnode;
         (yyval.node)->token="InclusiveOrExpression";
@@ -9449,11 +9460,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9453 "lalr1.tab.c"
+#line 9464 "lalr1.tab.c"
     break;
 
   case 357: /* ConditionalAndExpression: InclusiveOrExpression  */
-#line 5294 "lalr1.y"
+#line 5305 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalAndExpression";
@@ -9467,11 +9478,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9471 "lalr1.tab.c"
+#line 9482 "lalr1.tab.c"
     break;
 
   case 358: /* ConditionalAndExpression: ConditionalAndExpression LAND InclusiveOrExpression  */
-#line 5307 "lalr1.y"
+#line 5318 "lalr1.y"
                                                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalAndExpression";
@@ -9508,11 +9519,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9512 "lalr1.tab.c"
+#line 9523 "lalr1.tab.c"
     break;
 
   case 359: /* ConditionalOrExpression: ConditionalAndExpression  */
-#line 5345 "lalr1.y"
+#line 5356 "lalr1.y"
                                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalOrExpression";
@@ -9526,11 +9537,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9530 "lalr1.tab.c"
+#line 9541 "lalr1.tab.c"
     break;
 
   case 360: /* ConditionalOrExpression: ConditionalOrExpression LOR ConditionalAndExpression  */
-#line 5358 "lalr1.y"
+#line 5369 "lalr1.y"
                                                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalOrExpression";
@@ -9567,11 +9578,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9571 "lalr1.tab.c"
+#line 9582 "lalr1.tab.c"
     break;
 
   case 361: /* ConditionalExpression: ConditionalOrExpression  */
-#line 5396 "lalr1.y"
+#line 5407 "lalr1.y"
                                {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalExpression";
@@ -9585,11 +9596,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9589 "lalr1.tab.c"
+#line 9600 "lalr1.tab.c"
     break;
 
   case 362: /* ConditionalExpression: ConditionalOrExpression CONDMARK1 QMARK Expression CONDMARK2 COLON ConditionalExpression CONDMARK3  */
-#line 5409 "lalr1.y"
+#line 5420 "lalr1.y"
                                                                                                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConditionalExpression";
@@ -9613,11 +9624,11 @@ yyreduce:
         // tac=to_string(line++)+" "+tac; prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
-#line 9617 "lalr1.tab.c"
+#line 9628 "lalr1.tab.c"
     break;
 
   case 363: /* AssignmentExpression: ConditionalExpression  */
-#line 5434 "lalr1.y"
+#line 5445 "lalr1.y"
                              {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentExpression";
@@ -9631,11 +9642,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9635 "lalr1.tab.c"
+#line 9646 "lalr1.tab.c"
     break;
 
   case 364: /* AssignmentExpression: Assignment  */
-#line 5447 "lalr1.y"
+#line 5458 "lalr1.y"
                    {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentExpression";
@@ -9647,11 +9658,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 9651 "lalr1.tab.c"
+#line 9662 "lalr1.tab.c"
     break;
 
   case 365: /* Assignment: LeftHandSide AssignmentOperator AssignmentExpression  */
-#line 5460 "lalr1.y"
+#line 5471 "lalr1.y"
                                                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="Assignment";
@@ -9702,11 +9713,11 @@ yyreduce:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         (yyval.node)->type=temp;
     }
-#line 9706 "lalr1.tab.c"
+#line 9717 "lalr1.tab.c"
     break;
 
   case 366: /* LeftHandSide: Name  */
-#line 5512 "lalr1.y"
+#line 5523 "lalr1.y"
             {
         (yyval.node)=new astnode;
         (yyval.node)->token="LeftHandSide";
@@ -9718,11 +9729,11 @@ yyreduce:
         // cout<<"in"<<$$->token;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 9722 "lalr1.tab.c"
+#line 9733 "lalr1.tab.c"
     break;
 
   case 367: /* LeftHandSide: FieldAccess  */
-#line 5523 "lalr1.y"
+#line 5534 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="LeftHandSide";
@@ -9733,11 +9744,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->tac_val;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 9737 "lalr1.tab.c"
+#line 9748 "lalr1.tab.c"
     break;
 
   case 368: /* LeftHandSide: ArrayAccess  */
-#line 5533 "lalr1.y"
+#line 5544 "lalr1.y"
                     {
         (yyval.node)=new astnode;
         (yyval.node)->token="LeftHandSide";
@@ -9752,11 +9763,11 @@ yyreduce:
             if(t->dims!=(yyvsp[0].node)->dims) cout<<"Error dimension incorrect";
         }
     }
-#line 9756 "lalr1.tab.c"
+#line 9767 "lalr1.tab.c"
     break;
 
   case 369: /* AssignmentOperator: ASSIGN  */
-#line 5549 "lalr1.y"
+#line 5560 "lalr1.y"
           {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9766,11 +9777,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9770 "lalr1.tab.c"
+#line 9781 "lalr1.tab.c"
     break;
 
   case 370: /* AssignmentOperator: MUL_ASSIGN  */
-#line 5558 "lalr1.y"
+#line 5569 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9780,11 +9791,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9784 "lalr1.tab.c"
+#line 9795 "lalr1.tab.c"
     break;
 
   case 371: /* AssignmentOperator: QUO_ASSIGN  */
-#line 5567 "lalr1.y"
+#line 5578 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9794,11 +9805,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9798 "lalr1.tab.c"
+#line 9809 "lalr1.tab.c"
     break;
 
   case 372: /* AssignmentOperator: REM_ASSIGN  */
-#line 5576 "lalr1.y"
+#line 5587 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9808,11 +9819,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9812 "lalr1.tab.c"
+#line 9823 "lalr1.tab.c"
     break;
 
   case 373: /* AssignmentOperator: ADD_ASSIGN  */
-#line 5585 "lalr1.y"
+#line 5596 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9822,11 +9833,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9826 "lalr1.tab.c"
+#line 9837 "lalr1.tab.c"
     break;
 
   case 374: /* AssignmentOperator: SUB_ASSIGN  */
-#line 5594 "lalr1.y"
+#line 5605 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9836,11 +9847,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9840 "lalr1.tab.c"
+#line 9851 "lalr1.tab.c"
     break;
 
   case 375: /* AssignmentOperator: SHL_ASSIGN  */
-#line 5603 "lalr1.y"
+#line 5614 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9850,11 +9861,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9854 "lalr1.tab.c"
+#line 9865 "lalr1.tab.c"
     break;
 
   case 376: /* AssignmentOperator: SHR_ASSIGN  */
-#line 5612 "lalr1.y"
+#line 5623 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9864,11 +9875,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9868 "lalr1.tab.c"
+#line 9879 "lalr1.tab.c"
     break;
 
   case 377: /* AssignmentOperator: GEQUAL  */
-#line 5621 "lalr1.y"
+#line 5632 "lalr1.y"
             {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9878,11 +9889,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9882 "lalr1.tab.c"
+#line 9893 "lalr1.tab.c"
     break;
 
   case 378: /* AssignmentOperator: AND_ASSIGN  */
-#line 5630 "lalr1.y"
+#line 5641 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9892,11 +9903,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9896 "lalr1.tab.c"
+#line 9907 "lalr1.tab.c"
     break;
 
   case 379: /* AssignmentOperator: XOR_ASSIGN  */
-#line 5639 "lalr1.y"
+#line 5650 "lalr1.y"
                 {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9906,11 +9917,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9910 "lalr1.tab.c"
+#line 9921 "lalr1.tab.c"
     break;
 
   case 380: /* AssignmentOperator: OR_ASSIGN  */
-#line 5648 "lalr1.y"
+#line 5659 "lalr1.y"
                {
         (yyval.node)=new astnode;
         (yyval.node)->token="AssignmentOperator";
@@ -9920,11 +9931,11 @@ yyreduce:
         (yyval.node)->tac_val=(yyvsp[0].node)->lexeme;
         // cout<<"in"<<$$->token;
     }
-#line 9924 "lalr1.tab.c"
+#line 9935 "lalr1.tab.c"
     break;
 
   case 381: /* Expression: AssignmentExpression  */
-#line 5659 "lalr1.y"
+#line 5670 "lalr1.y"
                             {
         (yyval.node)=new astnode;
         (yyval.node)->token="Expression";
@@ -9938,11 +9949,11 @@ yyreduce:
         (yyval.node)->type=(yyvsp[0].node)->type;
         (yyval.node)->dims=(yyvsp[0].node)->dims;
     }
-#line 9942 "lalr1.tab.c"
+#line 9953 "lalr1.tab.c"
     break;
 
   case 382: /* ConstantExpression: Expression  */
-#line 5674 "lalr1.y"
+#line 5685 "lalr1.y"
                   {
         (yyval.node)=new astnode;
         (yyval.node)->token="ConstantExpression";
@@ -9955,11 +9966,11 @@ yyreduce:
         (yyval.node)->flag=(yyvsp[0].node)->flag;
         (yyval.node)->type=(yyvsp[0].node)->type;
     }
-#line 9959 "lalr1.tab.c"
+#line 9970 "lalr1.tab.c"
     break;
 
 
-#line 9963 "lalr1.tab.c"
+#line 9974 "lalr1.tab.c"
 
       default: break;
     }
@@ -10183,7 +10194,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 5687 "lalr1.y"
+#line 5698 "lalr1.y"
 
 
 

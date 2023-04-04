@@ -1617,6 +1617,8 @@ MethodDeclaration:
         // cout<<"in"<<$$->token;
         $$->type=$1->type;
         fname=cname;
+        
+        
     }
 ;
 MethodHeader:
@@ -1632,6 +1634,7 @@ MethodHeader:
         symadd($3->name,$2->type,$3->value,$1->access_specifier);
         $$->type=$2->type;
         // cout<<"in"<<$$->token;
+
     }
 	|Modifiers Type MethodDeclarator{
         $$=new astnode;
@@ -1769,6 +1772,14 @@ FunctionName:
         tac="define "+cname+"."+$1->lexeme+":";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         fname="fname";
+        // string tac;
+        tac="push PC+1";
+        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
+        tac="push BP";
+        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
+        tac="BP = SP";
     }
 ;
 FormalParameterLists:
