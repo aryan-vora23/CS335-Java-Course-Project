@@ -1629,8 +1629,8 @@ MethodDeclaration:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         tac="return";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
-        
-        
+        tac="endfunc";
+        tac=to_string(line++)+" "+tac;
     }
 ;
 MethodHeader:
@@ -1784,6 +1784,8 @@ FunctionName:
         tac="define "+cname+"."+$1->lexeme+":";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         fname="fname";
+        tac="beginfunc";
+        tac=to_string(line++)+" "+tac;
         // string tac;
         tac="return_addr = sp+4";
         tac=to_string(line++)+" "+tac;
@@ -2783,6 +2785,8 @@ StatementExpression:
         v.push_back($1);
         $$->children=v;
         // cout<<"in"<<$$->token;
+        string tac="push pc+1";
+        prog.push_back(tac);
         $$->tac_val=$1->tac_val;
         $$->type=$1->type;
         prog.push_back($1->tac_val);
@@ -3923,6 +3927,9 @@ MethodInvocation:
             }
         }
         // cout<<fullscope<<endl;
+        string tac;
+        tac="push pc+1";
+        prog.push_back(tac);
         $$->type=symtabGetType(fullscope,$1->tac_val);
         if($$->type!="0"){
             if(symtabGetArgs(fullscope,$1->value)!=""){
@@ -3997,6 +4004,8 @@ MethodInvocation:
             tac="push "+token[i];
             tac=to_string(line++)+" "+tac; prog.push_back(tac);
         }
+        tac="push pc+1";
+        prog.push_back(tac);
         $$->tac_val="call "+$1->tac_val+" "+to_string(token.size());
         // symtab_t* t=symtab_top[fullscope];
         $$->type=symtabGetType(fullscope,$1->value);
