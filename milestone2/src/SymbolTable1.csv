@@ -1,0 +1,7 @@
+name,lineno,type,size,args,access_specifier,dims,flag,offset
+----Symbtab for scope 0/1----
+f,19,void,0,int,double,1,0,0,0
+main,22,void,0,String,1,0,0,0
+
+----DONE----
+

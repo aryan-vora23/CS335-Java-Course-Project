@@ -1,0 +1,16 @@
+0 define LargestInArrayExample.f:
+1 args_num 2
+2 pop b
+3 pop a
+4 t1 = a + b
+5 c = t1
+6 define LargestInArrayExample.main:
+7 args_num 1
+8 pop args[]
+9 a = 1
+t2 = cast_to_double 1.2
+10 b = 1.2
+11 push a
+12 push b
+call f 2
+deallocate 12
