@@ -38,15 +38,26 @@ symtab_t* init_symtab_top() {
 // 	(*symtab)[scoped_name] = symtype;
 // }
 
-int getoffset(symtab_t*t){
-    int of=0;
+int getoffset(symtab_t*t,int flag){
+    if(flag==0)
+    {int of=0;
     for( auto i=(t)->begin(); i != (t)->end(); i++ ){
 		// symbolTable <<i->first;
-		if( i->second != NULL ) {
+		if( i->second != NULL && i->second->flag==flag) {
             of+=i->second->size;
         }
 	}
-    return of;
+    return of;}
+    else 
+    {int of=0,x;
+    for( auto i=(t)->begin(); i != (t)->end(); i++ ){
+		// symbolTable <<i->first;
+        if(i==t->begin()) x=i->second->size;
+		if( i->second != NULL && i->second->flag==flag) {
+            of+=i->second->size;
+        }
+	}
+    return of+x;}
 }
 
 int getsize(vector<string>v) {
@@ -70,7 +81,7 @@ void symadd(string symname, string symtype,string args) {
     type->lineno=yylineno;
     type->type=symtype;
     type->args=args;
-    type->offset=getoffset(symtab);
+    type->offset=getoffset(symtab,0);
     if(symtype=="byte") type->size=1;
     if(symtype=="short") type->size=2;
     if(symtype=="int") type->size=4;
@@ -90,7 +101,7 @@ void symadd_para(string symname, string symtype,int flag) {
     type->lineno=yylineno;
     type->type=symtype;
     type->flag=flag;
-    type->offset=getoffset(symtab);
+    type->offset=getoffset(symtab,1);
     if(symtype=="byte") type->size=1;
     if(symtype=="short") type->size=2;
     if(symtype=="int") type->size=4;
@@ -110,7 +121,7 @@ void symadd(string symname, string symtype,int dims) {
     type->lineno=yylineno;
     type->type=symtype;
     type->dims=dims;
-    type->offset=getoffset(symtab);
+    type->offset=getoffset(symtab,0);
     if(symtype=="byte") type->size=1;
     if(symtype=="short") type->size=2;
     if(symtype=="int") type->size=4;
@@ -139,7 +150,7 @@ void symadd(string symname, string symtype) {
 	Type*type=new Type;
     type->lineno=yylineno;
     type->type=symtype;
-    type->offset=getoffset(symtab);
+    type->offset=getoffset(symtab,0);
      if(symtype=="byte") type->size=1;
     if(symtype=="short") type->size=2;
     if(symtype=="int") type->size=4;
@@ -183,7 +194,7 @@ void symadd_list(vector<string>tokens, string symtype) {
         if(symtype=="char") type->size=2;
         type->lineno=yylineno;
         type->type=symtype;
-        type->offset=getoffset(symtab);
+        type->offset=getoffset(symtab,0);
         (*symtab)[tokens[i]]=type;
 
     }
@@ -388,7 +399,7 @@ void symadd(string symname, string symtype,string args, int accessspecifier) {
     type->type=symtype;
     type->args=args;
     type->access_specifier=accessspecifier;
-    type->offset=getoffset(symtab);
+    type->offset=getoffset(symtab,0);
      if(symtype=="byte") type->size=1;
     if(symtype=="short") type->size=2;
     if(symtype=="int") type->size=4;

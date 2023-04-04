@@ -1618,7 +1618,12 @@ MethodDeclaration:
         $$->type=$1->type;
         fname=cname;
         string tac;
-        tac="pop BP_old";
+        // string scope;
+        // scope=fullscope+"/"+to_string(currscope);
+        // cout<<scope<<endl;
+        // symtab_t* tab=symtab_top[scope];
+        // tac="SP = SP +"+getoffset(tab,0); prog.push_back(tac);
+        tac="Pop BP_old";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         tac="BP=BP_old";
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
@@ -1780,7 +1785,7 @@ FunctionName:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         fname="fname";
         // string tac;
-        tac="return_addr = PC+1";
+        tac="return_addr = sp+4";
         tac=to_string(line++)+" "+tac;
         prog.push_back(tac);
         tac="push BP";
@@ -1807,7 +1812,7 @@ FormalParameterLists:
         tac="args_num "+to_string(token.size());
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         for(int i=token.size()-1;i>=0;i--) {
-            tac="pop "+token[i];
+            tac="pop "+fullscope+"/"+to_string(currscope+1)+" "+token[i];
             tac=to_string(line++)+" "+tac; prog.push_back(tac);
         }
         
@@ -3377,7 +3382,7 @@ ReturnStatement:
         v.push_back($2);
         $$->children=v;
         // cout<<"in"<<$$->token;
-        prog.push_back("return");
+        // prog.push_back("return");
         $$->tac_val="return";
         $$->type="void";
     }
@@ -3392,8 +3397,8 @@ ReturnStatement:
         // cout<<"in"<<$$->token;
         string tac;
         if($2->flag)
-        tac="return t"+to_string(tempno-1);
-        else tac = "return "+$2->tac_val;
+        tac="rax= t"+to_string(tempno-1);
+        else tac = "rax= "+$2->tac_val;
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         $$->tac_val=tac;
         $$->type=$2->type;
@@ -5762,9 +5767,30 @@ void prettyPrint(ofstream&astfile,astnode* root){
 
 void print_tac( ofstream& tac){
     // tac<<"op"<<","<<"arg1"<<","<<"arg2"<<","<<"result"<<endl;
-	int i=0,l=prog.size();
+	int i=0,l=prog.size(),of=0;
     for(i=0;i<l;i++) {
-        tac<<prog[i]<<endl;
+        vector<string> words=split(prog[i],' ');
+        if((words[1]=="Pop")&&(of!=0)){tac<<"SP = SP + "<<of<<endl;tac<<prog[i]<<endl;}
+        else if(words[1]!="pop"){
+            tac<<prog[i]<<endl;
+        }
+        else {
+            symtab_t* table;
+            while(words[1]=="pop"){
+                i+=1;
+                table=symtab_top[words[2]];
+                // tac<<prog[i]<<endl;
+                words=split(prog[i],' ');
+            }
+            of=getoffset(table, 0);
+            tac<<"SP = SP - "<<getoffset(table, 0)<<endl;
+            for(auto i=table->begin();i!=table->end();i++){
+                if(i->second->flag){
+                    tac<<i->first<<"=BP+"<<4+i->second->offset<<endl;
+                }
+                else {tac<<i->first<<"=BP-"<<i->second->offset<<endl;}
+            } 
+        }
     }
 }
 

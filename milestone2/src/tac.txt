@@ -1,28 +1,31 @@
 0 define LargestInArrayExample.f:
-1 return_addr = PC+1
+1 return_addr = sp+4
 2 push BP
 3 BP = SP
 4 args_num 2
-5 pop b
-6 pop a
-7 t1 = a + b
-8 c = t1
-9 pop BP_old
+SP = SP - 0
+a=BP+32770
+b=BP+12
+8 rax= t1
+9 Pop BP_old
 10 BP=BP_old
 11 return
 12 define LargestInArrayExample.main:
-13 return_addr = PC+1
+13 return_addr = sp+4
 14 push BP
 15 BP = SP
 16 args_num 1
-17 pop args[]
-18 a = 1
-t2 = cast_to_double 1.2
-19 b = 1.2
+SP = SP - 12
+a=BP-0
+args=BP+21948
+b=BP-4
+c=BP-8
+19 b = 1
 20 push a
 21 push b
-call f 2
-deallocate 12
-22 pop BP_old
-23 BP=BP_old
-24 return
+22 c = call f 2
+deallocate 8
+SP = SP + 12
+23 Pop BP_old
+24 BP=BP_old
+25 return
