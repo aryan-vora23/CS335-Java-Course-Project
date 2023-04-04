@@ -1773,7 +1773,7 @@ FunctionName:
         tac=to_string(line++)+" "+tac; prog.push_back(tac);
         fname="fname";
         // string tac;
-        tac="push PC+1";
+        tac="return_addr = PC+1";
         tac=to_string(line++)+" "+tac;
         prog.push_back(tac);
         tac="push BP";
