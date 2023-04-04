@@ -1780,6 +1780,9 @@ FunctionName:
         tac=to_string(line++)+" "+tac;
         prog.push_back(tac);
         tac="BP = SP";
+        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
+
     }
 ;
 FormalParameterLists:
