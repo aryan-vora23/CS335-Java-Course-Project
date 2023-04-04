@@ -187,15 +187,15 @@ IFMARK1:
         string tac,togo_label;
         togo_label=get_label();
         tac="if (t"+to_string(tempno-1)+"=1) goto "+togo_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
 
         string topush_label=get_label();
         tac="goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         if_bwlabels.push(topush_label);
 
         tac=togo_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
 
     }
 ;
@@ -205,7 +205,7 @@ IFEND1:
         toget_label=if_bwlabels.top();
         if_bwlabels.pop();
 	    tac = toget_label+":";
-	    tac=to_string(line++)+" "+tac; prog.push_back(tac);
+	     prog.push_back(tac);
     }
 ;
 IFEND2:
@@ -213,7 +213,7 @@ IFEND2:
         string tac,topush_label;
         topush_label=get_label();
         tac="goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         if_endlabels.push(topush_label);
     }
 ;
@@ -223,7 +223,7 @@ ELSEMARK1:
         toget_label=if_bwlabels.top();
         if_bwlabels.pop();
 	    tac = toget_label+":";
-	    tac=to_string(line++)+" "+tac; prog.push_back(tac);
+	     prog.push_back(tac);
     }
 ;
 ELSEEND1:
@@ -232,7 +232,7 @@ ELSEEND1:
         toget_label=if_endlabels.top();
         if_endlabels.pop();
 	    tac = toget_label+":";
-	    tac=to_string(line++)+" "+tac; prog.push_back(tac);
+	     prog.push_back(tac);
     }
 ;
 
@@ -241,7 +241,7 @@ WHILEMARK2:
         string tac,topush_label;
         topush_label=get_label();
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         while_bwlabels.push(topush_label);
    }
 ;
@@ -252,11 +252,11 @@ WHILEMARK1:
         topush_label=get_label();
         tac="if (t"+to_string(tempno-1)+"=0) goto "+topush_label;
         // while_exp.push("t"+to_string(tempno-1));
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         while_endlabels.push(topush_label);
         // topush_label=get_label();
         // tac=topush_label+":";
-        // tac=to_string(line++)+" "+tac; prog.push_back(tac);
+        //  prog.push_back(tac);
         // while_endlabels.push(topush_label);
     }
 ;
@@ -269,11 +269,11 @@ WHILEEND1:
         // while_exp.pop();
         // tac="if ("+exp+"=1) goto "+toget_label;
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         toget_label=while_endlabels.top();
         while_endlabels.pop();
         tac=toget_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 DOMARK1:
@@ -282,7 +282,7 @@ DOMARK1:
         topush_label=get_label();
         do_bwlabels.push(topush_label);
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 DOEND1:
@@ -291,7 +291,7 @@ DOEND1:
         toget_label=do_bwlabels.top();
         do_bwlabels.pop();
         tac="if (t"+to_string(tempno-1)+"=1) goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 FORMARK1:
@@ -300,7 +300,7 @@ FORMARK1:
         topush_label=get_label();
         for_initlabels.push(topush_label);
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 FORMARK2:
@@ -309,15 +309,15 @@ FORMARK2:
         topush_label=get_label();
         for_statlabels.push(topush_label);
         tac="if (t"+to_string(tempno-1)+"=1) goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         topush_label=get_label();
         for_endlabels.push(topush_label);
         tac="goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         topush_label=get_label();
         for_updlabels.push(topush_label);
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 FORMARK3:
@@ -326,11 +326,11 @@ FORMARK3:
         toget_label=for_initlabels.top();
         for_initlabels.pop();
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         toget_label=for_statlabels.top();
         for_statlabels.pop();
         tac=toget_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 FOREND1:
@@ -339,35 +339,35 @@ FOREND1:
         toget_label=for_updlabels.top();
         for_updlabels.pop();
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         toget_label=for_endlabels.top();
         for_endlabels.pop();
         tac=toget_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 CONDMARK1:
     {
         string tac,topush_label=get_label();
         tac="if (t"+to_string(tempno-1)+"=0) goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         cond_bwlabels.push(topush_label);
         topush_label=get_label();
         cond_inlabels.push(topush_label);
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 CONDMARK2:
     {
         string tac,topush_label=get_label();
         tac="goto "+topush_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         cond_endlabels.push(topush_label);
         topush_label=cond_bwlabels.top();
         cond_bwlabels.pop();
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 CONDMARK3:
@@ -375,7 +375,7 @@ CONDMARK3:
         string tac,toget_label=cond_endlabels.top();
         cond_endlabels.pop();
         tac=toget_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 
@@ -1493,14 +1493,14 @@ VariableDeclarator:
         tac=fname+"."+$1->tac_val+" = "+$3->tac_val;
         else if($3->flag==1) tac=$1->tac_val+" = t"+to_string(tempno-1);
         else tac=$1->tac_val+" = "+$3->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         if($3->flag==3) {
             tac="*"+$1->tac_val+" = t"+to_string(tempno-1);
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         if($3->flag==4) {
             tac=$1->tac_val+" = "+"&t"+to_string(tempno-1);
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
             vector<string>v1=split($3->value,',');
             int l=$3->length;
             for(int i=0;i<l;i++) {
@@ -1508,7 +1508,7 @@ VariableDeclarator:
                 string s2="+";
                 string s3=") = ";
                 tac=s1+$1->tac_val+s2+to_string(i*4)+s3+v1[i];
-                tac=to_string(line++)+" "+tac; prog.push_back(tac);
+                 prog.push_back(tac);
             }
             $$->length=$3->length;
             // $$->tuples=$3->tuples;
@@ -1624,13 +1624,13 @@ MethodDeclaration:
         // symtab_t* tab=symtab_top[scope];
         // tac="SP = SP +"+getoffset(tab,0); prog.push_back(tac);
         tac="Pop BP_old";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac="BP=BP_old";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac="return";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac="endfunc";
-        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
     }
 ;
 MethodHeader:
@@ -1782,19 +1782,21 @@ FunctionName:
         // cout<<"in"<<$$->token;
         string tac;
         tac="define "+cname+"."+$1->lexeme+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         fname="fname";
         tac="beginfunc";
-        tac=to_string(line++)+" "+tac;
+        prog.push_back(tac);
         // string tac;
-        tac="return_addr = sp+4";
-        tac=to_string(line++)+" "+tac;
+        tac="obj_ref = popparam";
+        prog.push_back(tac);
+        tac="return_addr = SP+4";
+        
         prog.push_back(tac);
         tac="push BP";
-        tac=to_string(line++)+" "+tac;
+        
         prog.push_back(tac);
         tac="BP = SP";
-        tac=to_string(line++)+" "+tac;
+        
         prog.push_back(tac);
 
     }
@@ -1812,10 +1814,10 @@ FormalParameterLists:
         string s=$1->tac_val,tac;
         vector<string>token=split(s,',');
         tac="args_num "+to_string(token.size());
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         for(int i=token.size()-1;i>=0;i--) {
             tac="pop "+fullscope+"/"+to_string(currscope+1)+" "+token[i];
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         
     }
@@ -2005,7 +2007,11 @@ ConstructorName:
         if(cname!=$1->tac_val) cout<<"Invalid cunstructor name";
         string tac;
         tac="define "+cname+"."+"ctor"+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
+         tac="begin_func";
+        prog.push_back(tac);
+        tac="obj_ref = popparam";
+        prog.push_back(tac);
     }
 ;
 ConstructorBody:
@@ -2018,6 +2024,11 @@ ConstructorBody:
         v.push_back($4);
         v.push_back($5);
         $$->children=v;
+        string tac;
+        tac="push obj_ref";
+        prog.push_back(tac);
+        tac="endfunc";
+        prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|OPEN_CR SYMTABS ExplicitConstructorInvocation CLOSE_CR SYMTABE{
@@ -2028,6 +2039,11 @@ ConstructorBody:
         v.push_back($3);
         v.push_back($4);
         $$->children=v;
+        string tac;
+        tac="push obj_ref";
+        prog.push_back(tac);
+        tac="endfunc";
+        prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|OPEN_CR SYMTABS BlockStatements CLOSE_CR SYMTABE{
@@ -2038,6 +2054,11 @@ ConstructorBody:
         v.push_back($3);
         v.push_back($4);
         $$->children=v;
+        string tac;
+        tac="push obj_ref";
+        prog.push_back(tac);
+        tac="endfunc";
+        prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|OPEN_CR  CLOSE_CR{
@@ -2047,6 +2068,11 @@ ConstructorBody:
         v.push_back($1);
         v.push_back($2);
         $$->children=v;
+        string tac;
+        tac="push obj_ref";
+        prog.push_back(tac);
+        tac="endfunc";
+        prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -2261,7 +2287,7 @@ ArrayInitializer:
         if(temp_type=="ud") temp_type=$3->type;
         vector<string>token=split(s,',');
         string tac,temp1=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp1+" = "+temp_type+"["+to_string(token.size())+"]";
         $$->tac_val=tac;
         $$->flag=4;
@@ -2287,7 +2313,7 @@ ArrayInitializer:
         vector<string>token=split(s,',');
         if(temp_type=="ud") temp_type=$3->type;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+temp_type+"["+to_string(token.size())+"]";
         $$->tac_val=tac;
         $$->flag=4;
@@ -2309,7 +2335,7 @@ ArrayInitializer:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+temp_type+"[1]";
         $$->tac_val=tac;
         $$->flag=4;
@@ -2328,7 +2354,7 @@ ArrayInitializer:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+temp_type+"[0]";
         $$->tac_val=tac;
         $$->flag=4;
@@ -2694,7 +2720,7 @@ LabeledStatement:
         // cout<<"in"<<$$->token;
         string tac,topush_label=get_label();
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         m[$1->lexeme]=topush_label;
     }
 ;
@@ -2710,7 +2736,7 @@ LabeledStatementNoShortIf:
         // cout<<"in"<<$$->token;
         string tac,topush_label=get_label();
         tac=topush_label+":";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         m[$1->lexeme]=topush_label;
     }
 ;
@@ -2785,8 +2811,10 @@ StatementExpression:
         v.push_back($1);
         $$->children=v;
         // cout<<"in"<<$$->token;
-        string tac="push pc+1";
-        prog.push_back(tac);
+        // string tac="push pc+1";
+        // prog.push_back(tac);
+        // tac="push obj_ref";
+        // prog.push_back(tac);
         $$->tac_val=$1->tac_val;
         $$->type=$1->type;
         prog.push_back($1->tac_val);
@@ -3335,7 +3363,7 @@ BreakStatement:
         string tac,toget_label;
         toget_label=while_endlabels.top();
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
     | BREAK IDENTIFIER SEMICOLON{
         $$=new astnode;
@@ -3360,7 +3388,7 @@ ContinueStatement:
         string tac,toget_label;
         toget_label=while_bwlabels.top();
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
     | CONTINUE IDENTIFIER SEMICOLON{
         $$=new astnode;
@@ -3374,7 +3402,7 @@ ContinueStatement:
         string tac,toget_label;
         toget_label=m[$2->lexeme];
         tac="goto "+toget_label;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
     }
 ;
 ReturnStatement:
@@ -3403,7 +3431,7 @@ ReturnStatement:
         if($2->flag)
         tac="rax= t"+to_string(tempno-1);
         else tac = "rax= "+$2->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->tac_val=tac;
         $$->type=$2->type;
     }
@@ -3650,7 +3678,7 @@ ClassInstanceCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->tac_val;
         tac=tac+"\n"+"call "+$2->tac_val+".ctor 0";
 
@@ -3682,13 +3710,13 @@ ClassInstanceCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->tac_val;
         string s=$4->tac_val;
         vector<string>token=split(s,',');
         for(int i=0;i<token.size();i++) {
             tac="push "+token[i];
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         string scope=m1[$2->tac_val];
         // cout<<scope;
@@ -3744,7 +3772,7 @@ ArrayCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->type+$3->tac_val;
         $$->tac_val=tac;
         $$->flag=4;
@@ -3761,7 +3789,7 @@ ArrayCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->type+$3->tac_val+$4->tac_val;
         $$->tac_val=tac;
         $$->flag=4;
@@ -3778,7 +3806,7 @@ ArrayCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->tac_val+$3->tac_val;
         $$->tac_val=tac;
         $$->flag=4;
@@ -3796,7 +3824,7 @@ ArrayCreationExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac="Lcall_Alloc\n"; tac=tac+to_string(line++)+" ";
+        tac="Lcall_Alloc\n"; 
         tac=tac+temp+" = "+$2->tac_val+$3->tac_val+$4->tac_val;
         $$->tac_val=tac;
         $$->flag=4;
@@ -3930,6 +3958,8 @@ MethodInvocation:
         string tac;
         tac="push pc+1";
         prog.push_back(tac);
+        tac="push obj_ref";
+        prog.push_back(tac);
         $$->type=symtabGetType(fullscope,$1->tac_val);
         if($$->type!="0"){
             if(symtabGetArgs(fullscope,$1->value)!=""){
@@ -4002,9 +4032,11 @@ MethodInvocation:
         vector<string>token=split(s,',');
         for(int i=0;i<token.size();i++) {
             tac="push "+token[i];
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         tac="push pc+1";
+        prog.push_back(tac);
+        tac="push obj_ref";
         prog.push_back(tac);
         $$->tac_val="call "+$1->tac_val+" "+to_string(token.size());
         // symtab_t* t=symtab_top[fullscope];
@@ -4116,7 +4148,7 @@ MethodInvocation:
         vector<string>token=split(s,',');
         for(int i=0;i<token.size();i++) {
             tac="push "+token[i];
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         $$->tac_val="call "+$1->tac_val+$2->lexeme+$3->lexeme+" "+to_string(token.size());
         $$->type=symtabGetType(fullscope,$3->lexeme);
@@ -4168,7 +4200,7 @@ MethodInvocation:
         vector<string>token=split(s,',');
         for(int i=0;i<token.size();i++) {
             tac="push "+token[i];
-            tac=to_string(line++)+" "+tac; prog.push_back(tac);
+             prog.push_back(tac);
         }
         $$->tac_val="call "+$1->lexeme+$2->lexeme+$3->lexeme+" "+to_string(token.size());
         $$->type=symtabGetType(fullscope,$3->lexeme);
@@ -4208,11 +4240,11 @@ ArrayAccess:
         }
         $$->flag=4;
         $$->dims=$$->dims+1;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         var=get_tempvar();
         tac=var+" = "+$1->tac_val+"[t"+to_string(tempno-2)+"]";
         $$->tac_val=var;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->type=$1->type;
         $$->value=$1->value;
     }
@@ -4237,11 +4269,11 @@ ArrayAccess:
         }
         $$->flag=4;
         $$->dims=$1->dims+1;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         var=get_tempvar();
         tac=var+" = "+$1->tac_val+"[t"+to_string(tempno-2)+"]";
         $$->tac_val=var;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->type=$1->type;
         $$->value=$1->value;
     }
@@ -4309,9 +4341,9 @@ PostIncrementExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+","+temp;
         tac=temp+" = "+$1->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac=$1->tac_val+" = "+$1->tac_val+" + 1";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$1->type;
     }
@@ -4330,9 +4362,9 @@ PostDecrementExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+","+temp;
         tac=temp+" = "+$1->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac=$1->tac_val+" = "+$1->tac_val+" - 1";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$1->type;
     }
@@ -4374,7 +4406,7 @@ UnaryExpression:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$2->type;
     }
@@ -4391,7 +4423,7 @@ UnaryExpression:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$2->type;
     }
@@ -4423,9 +4455,9 @@ PreIncrementExpression:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=$2->tac_val+" = "+$2->tac_val+" + 1";
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac=temp+" = "+$2->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$1->type;
     }
@@ -4444,9 +4476,9 @@ PreDecrementExpression:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=$2->tac_val+" = "+$2->tac_val+" - 1";
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         tac=temp+" = "+$2->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$1->type;
     }
@@ -4478,7 +4510,7 @@ UnaryExpressionNotPlusMinus:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$2->type;
     }
@@ -4495,7 +4527,7 @@ UnaryExpressionNotPlusMinus:
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
         tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
         $$->type=$2->type;
     }
@@ -4523,7 +4555,7 @@ CastExpression:
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
         tac=temp+" = cast_to_"+$2->type+" "+$4->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->tac_val=temp;
         $$->type=$2->type;
     }
@@ -4540,7 +4572,7 @@ CastExpression:
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
         tac=temp+" = cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->tac_val=temp;
         $$->type=$2->type;
     }
@@ -4570,7 +4602,7 @@ CastExpression:
         $$->type=$2->type;
         // string tac,var=get_tempvar();
         // tac=var+" = cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
-        // tac=to_string(line++)+" "+tac; prog.push_back(tac);
+        //  prog.push_back(tac);
     }
 ;
 MultiplicativeExpression:
@@ -4620,7 +4652,7 @@ MultiplicativeExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|MultiplicativeExpression QUO UnaryExpression{
@@ -4656,7 +4688,7 @@ MultiplicativeExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|MultiplicativeExpression REM UnaryExpression{
@@ -4692,7 +4724,7 @@ MultiplicativeExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -4744,7 +4776,7 @@ AdditiveExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|AdditiveExpression SUB MultiplicativeExpression{
@@ -4780,7 +4812,7 @@ AdditiveExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -4831,7 +4863,7 @@ ShiftExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|ShiftExpression SHR AdditiveExpression {
@@ -4867,7 +4899,7 @@ ShiftExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|ShiftExpression GR AdditiveExpression{
@@ -4903,7 +4935,7 @@ ShiftExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -4954,7 +4986,7 @@ RelationalExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|RelationalExpression GTR ShiftExpression{
@@ -4990,7 +5022,7 @@ RelationalExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|RelationalExpression LEQ ShiftExpression{
@@ -5026,7 +5058,7 @@ RelationalExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|RelationalExpression GEQ ShiftExpression{
@@ -5062,7 +5094,7 @@ RelationalExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|RelationalExpression INSTANCEOF ReferenceType{
@@ -5082,7 +5114,7 @@ RelationalExpression:
         $$->type="boolean";
         string tac,temp1=get_tempvar();
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         $$->tac_val=temp1;
     }
 ;
@@ -5133,7 +5165,7 @@ EqualityExpression:
         // tac=$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 	|EqualityExpression NEQ RelationalExpression{
@@ -5169,7 +5201,7 @@ EqualityExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5220,7 +5252,7 @@ AndExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5271,7 +5303,7 @@ ExclusiveOrExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5322,7 +5354,7 @@ InclusiveOrExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5373,7 +5405,7 @@ ConditionalAndExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5424,7 +5456,7 @@ ConditionalOrExpression:
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
         tac=temp1+" = "+$1->tac_val+" "+$2->lexeme+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+         prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5462,7 +5494,7 @@ ConditionalExpression:
         // $$->tac_val=temp;
         // string tac="";
         // tac=tac+$2->lexeme+","+$1->tac_val+","+$3->tac_val+","+temp;
-        // tac=to_string(line++)+" "+tac; prog.push_back(tac);
+        //  prog.push_back(tac);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -5497,6 +5529,7 @@ Assignment:
         $$=new astnode;
         $$->token="Assignment";
         vector<astnode*>v;
+        // cout<<$3->tac_val<<endl;
         v.push_back($1);
         v.push_back($2);
         v.push_back($3);
@@ -5540,7 +5573,36 @@ Assignment:
         tac=$1->tac_val+" "+s2+" t"+to_string(tempno-1);
         else tac=$1->tac_val+" "+s2+" "+$3->tac_val;
         $$->code=tac+"\n";
-        tac=to_string(line++)+" "+tac; prog.push_back(tac);
+        vector<string>v2=split($1->tac_val,'.');
+        if(v2[0]=="this"){
+            string s3=searchthis(fullscope);
+            string classname="";
+            map<string,string>::iterator it=m1.begin();
+            while(it!=m1.end()){
+                if(s3==it->second) {
+                    classname=it->first;
+                    break;
+                }
+                it++;
+            }
+            tac=get_tempvar()+" = symtable("+classname+","+v2[1]+")\n"+"*(obj_ref+t"+to_string(tempno)+") = "+$3->tac_val;
+        }
+        v2=split($3->tac_val,'.');
+        if(v2[0]=="this"){
+            string s3=searchthis(fullscope);
+            string classname="";
+            map<string,string>::iterator it=m1.begin();
+            while(it!=m1.end()){
+                if(s3==it->second) {
+                    classname=it->first;
+                    break;
+                }
+                it++;
+            }
+            tac=get_tempvar()+" = symtable("+classname+","+v2[1]+")\n"+$1->tac_val+" = *(obj_ref+t"+to_string(tempno)+")";
+        }
+         prog.push_back(tac);
+        //  cout<<tac<<endl;
         $$->type=temp;
     }
 ;
@@ -5779,18 +5841,19 @@ void print_tac( ofstream& tac){
 	int i=0,l=prog.size(),of=0;
     for(i=0;i<l;i++) {
         vector<string> words=split(prog[i],' ');
-        if((words[1]=="Pop")&&(of!=0)){tac<<"SP = SP + "<<of<<endl;tac<<prog[i]<<endl;}
-        else if(words[1]!="pop"){
+        if((words[0]=="Pop")&&(of!=0)){tac<<"SP = SP + "<<of<<endl;tac<<prog[i]<<endl;}
+        else if(words[0]!="pop"){
             tac<<prog[i]<<endl;
         }
         else {
             symtab_t* table;
-            while(words[1]=="pop"){
+            while(words[0]=="pop"){
                 i+=1;
-                table=symtab_top[words[2]];
+                table=symtab_top[words[1]];
                 // tac<<prog[i]<<endl;
                 words=split(prog[i],' ');
             }
+            i-=1;
             of=getoffset(table, 0);
             tac<<"SP = SP - "<<getoffset(table, 0)<<endl;
             for(auto i=table->begin();i!=table->end();i++){

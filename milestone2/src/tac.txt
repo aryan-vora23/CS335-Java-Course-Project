@@ -1,31 +1,45 @@
-0 define LargestInArrayExample.f:
-1 return_addr = sp+4
-2 push BP
-3 BP = SP
-4 args_num 2
-SP = SP - 0
-a=BP+32770
-b=BP+12
-8 rax= t1
-9 Pop BP_old
-10 BP=BP_old
-11 return
-12 define LargestInArrayExample.main:
-13 return_addr = sp+4
-14 push BP
-15 BP = SP
-16 args_num 1
+define FindGCDExample1.main:
+beginfunc
+obj_ref = popparam
+return_addr = SP+4
+push BP
+BP = SP
+args_num 1
 SP = SP - 12
-a=BP-0
-args=BP+21948
-b=BP-4
-c=BP-8
-19 b = 1
-20 push a
-21 push b
-22 c = call f 2
-deallocate 8
+args=BP+4
+gcd=BP-8
+x=BP-0
+y=BP-4
+x = 12
+y = 8
+gcd = 1
+i = 1
+label0:
+t0 = i <= x
+t1 = i <= y
+t2 = t0 && t1
+if (t2=1) goto label1
+goto label2
+label3:
+t3 = i
+i = i + 1
+goto label0
+label1:
+t4 = x % i
+t5 = t4 == 0
+t6 = y % i
+t7 = t6 == 0
+t8 = t5 && t7
+if (t8=1) goto label4
+goto label5
+label4:
+gcd =int i
+label5:
+goto label3
+label2:
+sys.print "GCD of %d and %d is: %d"+x+y+gcd
 SP = SP + 12
-23 Pop BP_old
-24 BP=BP_old
-25 return
+Pop BP_old
+BP=BP_old
+return
+endfunc
