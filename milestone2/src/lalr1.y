@@ -802,11 +802,13 @@ ComplexName:
         if($$->type=="0"){
             // cout<<fullscope;
             string s=symtabGetType(fullscope,$1->value);
-            if(s=="0") cout<<"no object created";
+            // if(s=="0") cout<<"no object created";
             // cout<<s;
-            symtab_t*t=symtab_top[m1[s]];
-            Type*t1=(*t)[$3->lexeme];
-            $$->type=t1->type;
+            if(s!="0"){
+                symtab_t*t=symtab_top[m1[s]];
+                Type*t1=(*t)[$3->lexeme];
+                $$->type=t1->type;
+            }
             // cout<<$$->type;
         }
          else $$->type=$1->lexeme;
@@ -940,6 +942,7 @@ ImportDeclaration:
         vector<astnode*>v;
         v.push_back($1);
         $$->children=v;
+        symaddimp($1->tac_val);
         // cout<<"in"<<$$->token;
     }
 	|TypeImportOnDemandDeclaration{
@@ -948,6 +951,7 @@ ImportDeclaration:
         vector<astnode*>v;
         v.push_back($1);
         $$->children=v;
+        symaddimp($1->tac_val);
         // cout<<"in"<<$$->token;
     }
 ;
@@ -960,6 +964,7 @@ SingleTypeImportDeclaration:
         v.push_back($2);
         v.push_back($3);
         $$->children=v;
+        $$->tac_val=$2->tac_val;
         // cout<<"in"<<$$->token;
     }
 ;
@@ -974,6 +979,7 @@ TypeImportOnDemandDeclaration:
         v.push_back($4);
         v.push_back($5);
         $$->children=v;
+        $$->tac_val=$2->tac_val+$3->lexeme+$4->lexeme;
         // cout<<"in"<<$$->token;
     }
 ;
@@ -4019,13 +4025,16 @@ MethodInvocation:
         v.push_back($4);
         $$->children=v;
         vector<string>tokens=split($1->value,'.');
-        string x=m1[tokens[0]];
-        if(fullscope.find(x)!=0){
-            if($1->access_specifier==1)
-            {
-                cout<<"Method not accessible";
+        if(m1.find(tokens[0])!=m1.end()){
+            string x=m1[tokens[0]];
+            if(fullscope.find(x)!=0){
+                if($1->access_specifier==1)
+                {
+                    cout<<"Method not accessible";
+                }
             }
         }
+        
         // symadd($1->value,"nd","ud");
         // cout<<"in"<<$$->token;
         string s=$3->tac_val,tac;
@@ -4057,8 +4066,9 @@ MethodInvocation:
             vector<string>tokens=split(s,'.');
             s=symtabGetType(fullscope,tokens[0]);
             // if(s=="0") {
-            //     for(auto i: m1){
-            //         if(i.first==tokens[0]){
+            //     if(m1.find(tokens[0])!=m1.end()){
+            //     // for(auto k : m1){
+            //     //     if(k.first==tokens[0]){
             //             string scope=m1[tokens[0]];
             //             symtab_t *t=symtab_top[scope];
             //             Type*t1=(*t)[tokens[1]];
@@ -4071,7 +4081,7 @@ MethodInvocation:
             //             for(int i=0;i<args.size();i++){
             //                 if(args[i]!=args1[i]) yyerror("Argument mismatch2");
             //             }
-            //         }
+            //         // }
             //     }
             // }
             // else{
