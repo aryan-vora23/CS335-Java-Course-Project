@@ -24,9 +24,9 @@ symtab_t* init_symtab_top() {
     symtab_top["r"]=temp;
 
 	//universe
-	// temp = new symtab_t;
-	// (*temp)["true"] =  new Type();
-	// symtab_top["u"] = temp;
+	temp = new symtab_t;
+	// (*temp)["import"] =  new Type();
+	symtab_top["import"] = temp;
 
     temp=new symtab_t;
     symtab_top["0"]=temp;
@@ -125,6 +125,18 @@ void symadd_para(string symname, string symtype,int flag) {
     // if(args=="ud") type->args=""; //for function
     // else if(args=="NULL") type->args="args"; //for class
     (*symtab)[symname]=type;
+}
+
+void symaddimp(string symname) {
+    // string scoped_name = fullscope + " " + symname;
+	Type*type=new Type;
+    type->lineno=yylineno;
+    type->type="import";
+    // type->dims=dims;
+    // type->offset=getoffset(0);
+    // if(args=="ud") type->args=""; //for function
+    // else if(args=="NULL") type->args="args"; //for class
+    (*(symtab_top["import"]))[symname]=type;
 }
 
 void symadd(string symname, string symtype,int dims) {

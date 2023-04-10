@@ -431,13 +431,24 @@ PrintArg: IDENTIFIER{
         }
         | Literal{
             $$=new astnode;
-        $$->token="PrintArgs";
-        vector<astnode*>v;
-        v.push_back($1);
-        $$->children=v;
-        // cout<<"in"<<$$->token;
-        $$->tac_val=$1->tac_val;
-        $$->type=$1->type;
+            $$->token="PrintArgs";
+            vector<astnode*>v;
+            v.push_back($1);
+            $$->children=v;
+            // cout<<"in"<<$$->token;
+            $$->tac_val=$1->tac_val;
+            $$->type=$1->type;
+        // cout<<"in PrintArg";
+        }
+        | MethodInvocation{
+            $$=new astnode;
+            $$->token="PrintArgs";
+            vector<astnode*>v;
+            v.push_back($1);
+            $$->children=v;
+            // cout<<"in"<<$$->token;
+            $$->tac_val=$1->tac_val;
+            $$->type=$1->type;
         // cout<<"in PrintArg";
         }
         | {
