@@ -8,75 +8,76 @@ string getReg(string var_name)
     return "r" + var_name;
 }
 
-void convert_tac_to_x86(string tac)
+string convert_tac_to_x86(string tac)
 {
-    string op, arg1, arg2, res;
+    string op1, op2, arg1, arg2, res;
     stringstream ss(tac);
-    ss >> op >> arg1 >> arg2 >> res;
-    if (op == "assign")
+    ss >> res>> op1 >> arg1 >> op2 >> arg2;
+    if (op1 == "=")
     {
         if (arg1[0] == 't')
         {
-            cout << "mov " << getReg(res) << ", " << getReg(arg1) << endl;
+            return "mov " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
         else
         {
-            cout << "mov " << getReg(res) << ", " << arg1 << endl;
+            return "mov " + getReg(res) + ", " + arg1 + "\n";
         }
     }
-    else if (op == "add")
+    else if (op1 == "+")
     {
         if (arg1[0] == 't')
         {
-            cout << "add " << getReg(res) << ", " << getReg(arg1) << endl;
+            return "add " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
         else
         {
-            cout << "add " << getReg(res) << ", " << arg1 << endl;
+            return "add " + getReg(res) + ", " + arg1 + "\n";
         }
     }
-    else if (op == "sub")
+    else if (op1 == "-")
     {
         if (arg1[0] == 't')
         {
-            cout << "sub " << getReg(res) << ", " << getReg(arg1) << endl;
+            return "sub " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
         else
         {
-            cout << "sub " << getReg(res) << ", " << arg1 << endl;
+            return "sub " + getReg(res) + ", " + arg1 + "\n";
         }
     }
-    else if (op == "mul")
+    else if (op1 == "*")
     {
         if (arg1[0] == 't')
         {
-            cout << "mul " << getReg(res) << ", " << getReg(arg1) << endl;
+            return "mul " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
         else
         {
-            cout << "mul " << getReg(res) << ", " << arg1 << endl;
+            return "mul " + getReg(res) + ", " + arg1 + "\n";
         }
     }
-    else if (op == "div")
+    else if (op1 == "/")
     {
         if (arg1[0] == 't')
         {
-            cout << "div " << getReg(res) << ", " << getReg(arg1) << endl;
+            return "div " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
         else
         {
-            cout << "div " << getReg(res) << ", " << arg1 << endl;
+            return "div " + getReg(res) + ", " + arg1 + "\n";
         }
     }
-    else if (op == "goto")
+    else if (op1 == "goto")
     {
-        cout << "jmp " << arg1 << endl;
+        return "jmp " + arg1 + "\n";
     }
-    else if (op == "if")
+    else if (op1 == "if")
     {
         if (arg1[0] == 't')
         {
-            cout << "cmp " << getReg(arg1) << ", " << getReg(arg2) << endl;
+            return "cmp " + getReg(arg1) + ", " + getReg(arg2) + "\n";
         }
     }
+    return "";
 }

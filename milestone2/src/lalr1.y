@@ -3,6 +3,7 @@
     #include<bits/stdc++.h>
     #include<fstream>
     #include "symtab.h"
+    #include "tac_convert.h"
     using namespace std;
     extern int yylex();
     extern FILE *yyin;
@@ -6047,6 +6048,12 @@ int main (int argc, char **argv) {
     // }
     print_tac(tac);
     cout<<"\ndone prog\n";
+    ifstream tac_file("tac.txt");
+    string tac_line;
+    while(getline(tac_file,tac_line)){
+        cout<<convert_tac_to_x86(tac_line);
+    }
+    tac_file.close();
     return 0;
 }
 
