@@ -20,7 +20,7 @@ string convert_tac_to_x86(string tac)
         {
             return "mov " + getReg(res) + ", " + getReg(arg1) + "\n";
         }
-        else if (op1 == "+")
+        else if (op2 == "+")
         {
             if (arg1[0] == 't')
             {
@@ -31,7 +31,7 @@ string convert_tac_to_x86(string tac)
                 return "add " + getReg(res) + ", " + arg1 + "\n";
             }
         }
-        else if (op1 == "-")
+        else if (op2 == "-")
         {
             if (arg1[0] == 't')
             {
@@ -42,7 +42,7 @@ string convert_tac_to_x86(string tac)
                 return "sub " + getReg(res) + ", " + arg1 + "\n";
             }
         }
-        else if (op1 == "*")
+        else if (op2 == "*")
         {
             if (arg1[0] == 't')
             {
@@ -53,7 +53,7 @@ string convert_tac_to_x86(string tac)
                 return "mul " + getReg(res) + ", " + arg1 + "\n";
             }
         }
-        else if (op1 == "/")
+        else if (op2 == "/")
         {
             if (arg1[0] == 't')
             {
