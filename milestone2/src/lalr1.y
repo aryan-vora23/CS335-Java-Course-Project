@@ -6049,7 +6049,7 @@ int main (int argc, char **argv) {
     print_tac(tac);
     cout<<"\ndone prog\n";
     ifstream tac_file("tac.txt");
-    ofstream x86_file("Assembly.x86");
+    ofstream x86_file("Assemblyx86.s");
     string tac_line;
     while(getline(tac_file,tac_line)){
         x86_file << convert_tac_to_x86(tac_line);
