@@ -14,10 +14,55 @@ string convert_tac_to_x86(string tac)
     stringstream ss(tac);
     ss >> res>> op1 >> arg1 >> op2 >> arg2;
     if (op1 == "=")
-    {
-        if (arg1[0] == 't')
+    { 
+
+        if (arg1[0] == 't' && arg1.empty())
         {
             return "mov " + getReg(res) + ", " + getReg(arg1) + "\n";
+        }
+        else if (op1 == "+")
+        {
+            if (arg1[0] == 't')
+            {
+                return "add " + getReg(res) + ", " + getReg(arg1) + "\n";
+            }
+            else
+            {
+                return "add " + getReg(res) + ", " + arg1 + "\n";
+            }
+        }
+        else if (op1 == "-")
+        {
+            if (arg1[0] == 't')
+            {
+                return "sub " + getReg(res) + ", " + getReg(arg1) + "\n";
+            }
+            else
+            {
+                return "sub " + getReg(res) + ", " + arg1 + "\n";
+            }
+        }
+        else if (op1 == "*")
+        {
+            if (arg1[0] == 't')
+            {
+                return "mul " + getReg(res) + ", " + getReg(arg1) + "\n";
+            }
+            else
+            {
+                return "mul " + getReg(res) + ", " + arg1 + "\n";
+            }
+        }
+        else if (op1 == "/")
+        {
+            if (arg1[0] == 't')
+            {
+                return "div " + getReg(res) + ", " + getReg(arg1) + "\n";
+            }
+            else
+            {
+                return "div " + getReg(res) + ", " + arg1 + "\n";
+            }
         }
         else
         {
