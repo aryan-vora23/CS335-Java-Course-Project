@@ -79,4 +79,5 @@ string convert_tac_to_x86(string tac)
             return "cmp " + getReg(arg1) + ", " + getReg(arg2) + "\n";
         }
     }
+    return "";
 }
