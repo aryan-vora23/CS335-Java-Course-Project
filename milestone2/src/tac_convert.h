@@ -79,4 +79,33 @@ void convert_tac_to_x86(string tac)
             cout << "cmp " << getReg(arg1) << ", " << getReg(arg2) << endl;
         }
     }
+    else if (op == "pop")
+    {
+        cout<<"pop "<<getReg(res)<<endl;
+    }
+    else if (op == "push")
+    {
+        cout<<"push "<<getReg(res)<<endl;
+    }
+    else if (op == "call")
+    {
+        cout<<"call "<<arg1<<endl;
+    }
+    else if (op == "ret")
+    {
+        cout<<"ret"<<endl;
+    }
+    else if (op == "label")
+    {
+        cout<<arg1<<":"<<endl;
+    }
+    else if (op == "func")
+    {
+        cout<<arg1<<":"<<endl;
+    }
+    else if (op == "endfunc")
+    {
+        cout<<"endfunc"<<endl;
+    }
+    
 }
