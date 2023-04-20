@@ -1643,7 +1643,7 @@ MethodDeclaration:
         // tac="SP = SP +"+getoffset(tab,0); prog.push_back(tac);
         tac="Pop BP_old";
          prog.push_back(tac);
-        tac="BP=BP_old";
+        tac="BP = BP_old";
          prog.push_back(tac);
         tac="return";
          prog.push_back(tac);
@@ -1799,7 +1799,9 @@ FunctionName:
         $$->value=$1->type;
         // cout<<"in"<<$$->token;
         string tac;
+        if($1->lexeme!="main")
         tac="define "+cname+"."+$1->lexeme+":";
+        else tac="define "+$1->lexeme+":";
          prog.push_back(tac);
         fname="fname";
         tac="beginfunc";
@@ -1807,7 +1809,7 @@ FunctionName:
         // string tac;
         tac="obj_ref = popparam";
         prog.push_back(tac);
-        tac="return_addr = SP+4";
+        tac="return_addr = SP + 4";
         
         prog.push_back(tac);
         tac="push BP";
@@ -3447,8 +3449,8 @@ ReturnStatement:
         // cout<<"in"<<$$->token;
         string tac;
         if($2->flag)
-        tac="rax= t"+to_string(tempno-1);
-        else tac = "rax= "+$2->tac_val;
+        tac="rax = t"+to_string(tempno-1);
+        else tac = "rax = "+$2->tac_val;
          prog.push_back(tac);
         $$->tac_val=tac;
         $$->type=$2->type;
@@ -3962,7 +3964,7 @@ MethodInvocation:
         $$->children=v;
         // symadd($1->value,"nd","ud");
         // cout<<"in"<<$$->token;
-        $$->tac_val="call "+$1->tac_val+" 0";
+        $$->tac_val="call "+cname+"."+$1->tac_val+" 0";
         // symtab_t* t=symtab_top[fullscope];
         vector<string>tokens=split($1->value,'.');
         string x=m1[tokens[0]];
@@ -3974,7 +3976,7 @@ MethodInvocation:
         }
         // cout<<fullscope<<endl;
         string tac;
-        tac="push pc+1";
+        tac="push pc + 1 ";
         prog.push_back(tac);
         tac="push obj_ref";
         prog.push_back(tac);
@@ -4055,11 +4057,11 @@ MethodInvocation:
             tac="push "+token[i];
              prog.push_back(tac);
         }
-        tac="push pc+1";
+        tac="push pc + 1 ";
         prog.push_back(tac);
         tac="push obj_ref";
         prog.push_back(tac);
-        $$->tac_val="call "+$1->tac_val+" "+to_string(token.size());
+        $$->tac_val="call "+cname+"."+$1->tac_val+" "+to_string(token.size());
         // symtab_t* t=symtab_top[fullscope];
         $$->type=symtabGetType(fullscope,$1->value);
         if($$->type!="0")
@@ -5880,9 +5882,9 @@ void print_tac( ofstream& tac){
             tac<<"SP = SP - "<<getoffset(table, 0)<<endl;
             for(auto i=table->begin();i!=table->end();i++){
                 if(i->second->flag){
-                    tac<<i->first<<"=BP+"<<4+i->second->offset<<endl;
+                    tac<<i->first<<" = BP + "<<4+i->second->offset<<endl;
                 }
-                else {tac<<i->first<<"=BP-"<<i->second->offset<<endl;}
+                else {tac<<i->first<<" = BP - "<<i->second->offset<<endl;}
             } 
         }
     }
@@ -6049,8 +6051,11 @@ int main (int argc, char **argv) {
     print_tac(tac);
     cout<<"\ndone prog\n";
     ifstream tac_file("tac.txt");
-    ofstream x86_file("Assemblyx86.s");
+    ofstream x86_file("Assembly.s");
     string tac_line;
+    string s=".LC0:\n\t";
+    s=s+".text\n\t.globl main\n";
+    x86_file<<s;
     while(getline(tac_file,tac_line)){
         x86_file << convert_tac_to_x86(tac_line);
     }
