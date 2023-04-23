@@ -1,45 +1,132 @@
-define FindGCDExample1.main:
+define test_10.isleap:
 beginfunc
 obj_ref = popparam
-return_addr = SP+4
+return_addr = SP + 4
 push BP
 BP = SP
 args_num 1
-SP = SP - 12
-args=BP+4
-gcd=BP-8
-x=BP-0
-y=BP-4
-x = 12
-y = 8
-gcd = 1
-i = 1
+SP = SP - 24
+a = BP - 12
+a1 = BP - 0
+b = BP - 16
+b1 = BP - 4
+c = BP - 20
+c1 = BP - 8
+yr = BP + 4
+a1 = 400
+b1 = 100
+c1 = 4
+t0 = yr % a1
+a = t0
+t1 = yr % b1
+b = t1
+t2 = yr % c1
+c = t2
+t3 = c == 0
+if (t3=1) goto label0
+goto label1
 label0:
-t0 = i <= x
-t1 = i <= y
-t2 = t0 && t1
-if (t2=1) goto label1
-goto label2
-label3:
-t3 = i
-i = i + 1
-goto label0
-label1:
-t4 = x % i
-t5 = t4 == 0
-t6 = y % i
-t7 = t6 == 0
-t8 = t5 && t7
-if (t8=1) goto label4
-goto label5
-label4:
-gcd =int i
-label5:
+t4 = a == 0
+t5 = b == 0
+t6 = t4 && t5
+if (t6=1) goto label2
 goto label3
 label2:
-sys.print "GCD of %d and %d is: %d"+x+y+gcd
-SP = SP + 12
+rax = 1
+goto label4
+label3:
+t7 = b != 0
+if (t7=1) goto label5
+goto label6
+label5:
+rax = 0
+label6:
+label4:
+goto label7
+label1:
+rax = 0
+label7:
+SP = SP + 24
 Pop BP_old
-BP=BP_old
+BP = BP_old
+return
+endfunc
+define main:
+beginfunc
+obj_ref = popparam
+return_addr = SP + 4
+push BP
+BP = SP
+args_num 1
+SP = SP - 16
+args = BP + 4
+c = BP - 8
+day = BP - 12
+num = BP - 0
+yr = BP - 4
+num = 2
+yr = 2001
+push yr
+push pc + 1 
+push obj_ref
+c = call test_10.isleap 1
+deallocate 4
+day = 0
+t8 = num == 1
+t9 = num == 3
+t10 = t8 || t9
+t11 = num == 5
+t12 = t10 || t11
+t13 = num == 7
+t14 = t12 || t13
+t15 = num == 8
+t16 = t14 || t15
+t17 = num == 10
+t18 = t16 || t17
+t19 = num == 12
+t20 = t18 || t19
+if (t20=1) goto label8
+goto label9
+label8:
+day =int 31
+goto label10
+label9:
+t21 = num == 4
+t22 = num == 6
+t23 = t21 || t22
+t24 = num == 9
+t25 = t23 || t24
+t26 = num == 11
+t27 = t25 || t26
+if (t27=1) goto label11
+goto label12
+label11:
+day =int 30
+goto label13
+label12:
+t28 = num == 2
+if (t28=1) goto label14
+goto label15
+label14:
+t29 = c == 1
+if (t29=1) goto label16
+goto label17
+label16:
+day =int 29
+goto label18
+label17:
+day =int 28
+label18:
+goto label19
+label15:
+day =int 9999
+label19:
+label13:
+label10:
+sys.print day
+rax = 0
+SP = SP + 16
+Pop BP_old
+BP = BP_old
 return
 endfunc

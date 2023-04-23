@@ -1502,7 +1502,7 @@ VariableDeclarator:
         }
         if($1->type != $3->type)
         {    string t=get_tempvar();
-             s1=t+" = cast_to_"+temp+" "+$3->tac_val;
+             s1=t+" =cast_to_"+temp+" "+$3->tac_val;
             prog.push_back(s1);
         }
         
@@ -4428,7 +4428,7 @@ UnaryExpression:
         $$->tac_val=temp;
         string tac="";
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
-        tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
+        tac=temp+" = "+$1->lexeme+$2->tac_val;
         $$->code=tac+"\n";
          prog.push_back(tac);
         // cout<<"in"<<$$->token;
@@ -4445,7 +4445,7 @@ UnaryExpression:
         $$->tac_val=temp;
         string tac="";
         // tac=tac+$1->lexeme+","+$2->tac_val+","+","+temp;
-        tac=temp+" = "+$1->lexeme+" "+$2->tac_val;
+        tac=temp+" = "+$1->lexeme+$2->tac_val;
         $$->code=tac+"\n";
          prog.push_back(tac);
         // cout<<"in"<<$$->token;
@@ -4578,7 +4578,7 @@ CastExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac=temp+" = cast_to_"+$2->type+" "+$4->tac_val;
+        tac=temp+" =cast_to_"+$2->type+" "+$4->tac_val;
          prog.push_back(tac);
         $$->tac_val=temp;
         $$->type=$2->type;
@@ -4595,7 +4595,7 @@ CastExpression:
         $$->children=v;
         // cout<<"in"<<$$->token;
         string tac,temp=get_tempvar();
-        tac=temp+" = cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
+        tac=temp+" =cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
          prog.push_back(tac);
         $$->tac_val=temp;
         $$->type=$2->type;
@@ -4625,7 +4625,7 @@ CastExpression:
         // cout<<"in"<<$$->token;
         $$->type=$2->type;
         // string tac,var=get_tempvar();
-        // tac=var+" = cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
+        // tac=var+" =cast_to_"+$2->type+$3->tac_val+" "+$5->tac_val;
         //  prog.push_back(tac);
     }
 ;
@@ -4659,7 +4659,7 @@ MultiplicativeExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4695,7 +4695,7 @@ MultiplicativeExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4731,7 +4731,7 @@ MultiplicativeExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4783,7 +4783,7 @@ AdditiveExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4819,7 +4819,7 @@ AdditiveExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4870,7 +4870,7 @@ ShiftExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4906,7 +4906,7 @@ ShiftExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4942,7 +4942,7 @@ ShiftExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -4993,7 +4993,7 @@ RelationalExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5029,7 +5029,7 @@ RelationalExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5065,7 +5065,7 @@ RelationalExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5101,7 +5101,7 @@ RelationalExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5172,7 +5172,7 @@ EqualityExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5208,7 +5208,7 @@ EqualityExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5259,7 +5259,7 @@ AndExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5310,7 +5310,7 @@ ExclusiveOrExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5361,7 +5361,7 @@ InclusiveOrExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5412,7 +5412,7 @@ ConditionalAndExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -5463,7 +5463,7 @@ ConditionalOrExpression:
         if($1->type != $3->type)
         {   if($1->type==temp){
                 string t1=get_tempvar(),t2;
-                s1=t1+" = cast_to_"+temp+" "+$3->tac_val;
+                s1=t1+" =cast_to_"+temp+" "+$3->tac_val;
                 prog.push_back(s1);
                 $3->tac_val=t1;
                 // t2=get_tempvar();
@@ -6054,7 +6054,10 @@ int main (int argc, char **argv) {
     ofstream x86_file("Assembly.s");
     string tac_line;
     string s=".LC0:\n\t";
-    s=s+".text\n\t.globl main\n";
+    s=s+".string  \"%d\\n\"\n\t.text\n\t.globl main\n";
+    x86_file<<s;
+    s="System.println:\n";
+    s=s+"\tpushq	%rbp\n\tmovq	%rsp, %rbp\n\tmovq	16(%rbp), %rsi\n\tleaq	.LC0(%rip), %rdi\n\tmovq	$0, %rax\n\tcall printf@PLT\n\tmovq	$0, %rax\n\tmovq	%rbp, %rsp\n\tpopq	%rbp\n\tret\n";
     x86_file<<s;
     while(getline(tac_file,tac_line)){
         x86_file << convert_tac_to_x86(tac_line);
