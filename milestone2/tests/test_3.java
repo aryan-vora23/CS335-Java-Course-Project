@@ -1,18 +1,27 @@
-public class FindGCDExample1   
-{  
-public static void main(String[] args)   
-{  
-//x and y are the numbers to find the GCF  
-int x = 12, y = 8, gcd = 1;  
-//running loop form 1 to the smallest of both numbers  
-for(int i = 1; i <= x && i <= y; i++)  
-{  
-//returns true if both conditions are satisfied   
-if(x%i==0 && y%i==0)  
-//storing the variable i in the variable gcd  
-gcd = i;  
-}  
-//prints the gcd  
-System.out.println("GCD of %d and %d is: %d"+x+y+gcd);  
-}  
+class test_5 {
+    int add(int a,int b,int c,int d){
+        int sum;
+        int s1=1;
+        int s2=1;
+        while(b>0){
+          s1=s1*a;
+          b=b-1;
+        }
+        while(d>0){
+          s2=s2*c;
+          d=d-1;
+        }
+        sum=s1+s2;
+        return sum;
+    }
+
+    void main(String args[]) {
+        int a=2;
+        int b=2;
+        int c=3;
+        int d=3;
+        int sum=add(a,b,c,d);
+        System.out.println(sum);
+        return 0;
+    }
 }

@@ -1,25 +1,15 @@
-public class Prime {
+class test_9 {
 
-    public static void main(String[] args) {
-
-        int low = 20, high = 50;
-
-        while (low < high) {
-            boolean flag = false;
-
-            for(int i = 2; i <= low/2; ++i) {
-                // condition for nonprime number
-                if(low % i == 0) {
-                    flag = true;
-                    break;
-                }
+    void main(String args[]) {
+        int i=0;
+        int j=0;
+        // int k=0;
+        int sum=0;
+        for (i=0;i<3;i=i+1) {
+            for(j=0;j<7;j=j+1){
+                sum=sum+1;
             }
-
-            if (!flag && low != 0 && low != 1){
-                System.out.println(low + " ");
-
-            ++low;
         }
+        System.out.println(sum);
     }
-}
 }

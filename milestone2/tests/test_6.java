@@ -1,7 +1,10 @@
-class test1 {
-    public static void main(String[] args) {
-        int a=10;
-        double b = 10.5;
-        int x=b; // should give error
-    }
+class Arithmetic{   
+ public static void main(String args[]){  
+  int a=3;
+  int b=2;
+  int c=10;
+  int d=(c/b)*a+b;
+  System.out.println(d);  //comment push
+  return 0;  
+ }  
 }

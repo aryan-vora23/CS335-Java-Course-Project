@@ -1,15 +1,20 @@
-class Main {
-  public static void main(String[] args) {
-
-    int base = 3, exponent = 4;
-
-    long result = 1;
-
-    while (exponent != 0) {
-      result *= base;
-      --exponent;
+class test_5 {
+    int f(int a) {
+        if(~a) a=a+2;
+        else a=a-2;
+        return a;
     }
 
-    System.out.println("Answer = " + result);
-  }
+    void main(String args[]) {
+        int a=5;
+        int b=3;
+        int i;
+        for(i=0;i<10;i=i+1){
+          b=b+2;
+        }
+        a=f(a);
+        int x=b%a;
+        System.out.println(x);  //comment push
+        return 0;
+    }
 }

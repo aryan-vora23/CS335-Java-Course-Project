@@ -1,27 +1,16 @@
-public class LargestInArrayExample{  
-// public static int getLargest(int[] a, int total){  
-// int temp;  
-// for (int i = 0; i < total; i++)   
-//         {  
-//             for (int j = i + 1; j < total; j++)   
-//             {  
-//                 if (a[i] > a[j])   
-//                 {  
-//                     temp = a[i];  
-//                     a[i] = a[j];  
-//                     a[j] = temp;  
-//                 }  
-//             }  
-//         }  
-//        return a[total-1];  
-// }  
-void f(int a, double b)
-{   double c=a+b;
-    // return a+b;
-}
+public class Shift{  
+public static int ShiftLeft(int a, int b){  
+    int x;
+    x = a<<b;
+    return x;
+}  
 public static void main(String args[]){  
     int a=1;
-    double b=1.2;
-    f(a,b);
+    int b=2;
+    int c=4;
+    c=ShiftLeft(a, b);
+    b=c>>1;
+    System.out.println(b); 
+    return 0;
 }
 }
